@@ -157,7 +157,5 @@ public class Main {
             System.err.println("Error: " + e.getMessage());
         }
     }
-    public void testInterval () {
-        http://guitarron.pandorabots.com/pandora/talk?botid=da530ba70e345ab1
-    }
+
 }
