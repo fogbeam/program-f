@@ -616,20 +616,7 @@ public class Bot {
         }
     }
 
-    /**
-     * Excel sometimes adds mysterious formatting to CSV files.
-     * This function tries to clean it up.
-     *
-     * @param line     line from AIMLIF file
-     * @return   reformatted line
-     */
-    public String fixCSV (String line) {
-        while (line.endsWith(";")) line = line.substring(0, line.length()-1);
-        if (line.startsWith("\"")) line = line.substring(1, line.length());
-        if (line.endsWith("\"")) line = line.substring(0, line.length()-1);
-        line = line.replaceAll("\"\"", "\"");
-        return line;
-    }
+
 
     /**
      * read AIMLIF categories from a file into bot brain
@@ -649,7 +636,6 @@ public class Bot {
             //Read File Line By Line
             while ((strLine = br.readLine()) != null)   {
                 try {
-                    strLine = fixCSV(strLine);
                     Category c = Category.IFToCategory(strLine);
                     categories.add(c);
                 } catch (Exception ex) {

@@ -21,9 +21,6 @@ package org.alicebot.ab;
 
 import org.alicebot.ab.utils.IOUtils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -33,9 +30,9 @@ public class AB {
      * new AIML patterns.
      *
      */
-    public static boolean shuffle_mode = true;
+    public static boolean shuffle_mode = false;
     public static boolean sort_mode = true;
-    public static boolean filter_atomic_mode = false;
+    public static boolean filter_atomic_mode = true;
     public static boolean filter_wild_mode = false;
     public static String logfile = MagicStrings.root_path+"/data/"+MagicStrings.ab_sample_file; //normal.txt";
     public static AIMLSet passed = new AIMLSet("passed");

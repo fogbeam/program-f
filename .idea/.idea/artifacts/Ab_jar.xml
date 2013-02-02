@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="Ab:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Ab_jar</output-path>
+    <output-path>$PROJECT_DIR$/lib</output-path>
     <root id="archive" name="Ab.jar">
       <element id="module-output" name="Ab" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/jgoodies-forms.jar" path-in-jar="/" />
@@ -15,6 +15,7 @@
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/httpclient-cache-4.2.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/httpcore-4.2.1.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$PROJECT_DIR$/lib/httpmime-4.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/joda-time-2.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

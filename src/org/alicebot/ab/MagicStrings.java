@@ -23,15 +23,22 @@ package org.alicebot.ab;
  * Global values for many strings in Program AB
  */
 public class MagicStrings {
-    public static String programNameVersion = "Program AB 0.0.3.9 beta -- AI Foundation Reference AIML 2.0 implementation";
+    // General global strings
+    public static String programNameVersion = "Program AB 0.0.4.0 beta -- AI Foundation Reference AIML 2.0 implementation";
     public static String aimlif_split_char = ",";
     public static String default_bot = "super";
     public static String default_language = "EN";
     public static String aimlif_split_char_name = "\\#Comma";
     public static String aimlif_file_suffix = ".csv";
     public static String ab_sample_file = "sample.txt";
+    // <sraix> defaults
     public static String pannous_api_key = "guest";
     public static String pannous_login = "test-user";
+    public static String sraix_failed = "SRAIXFAILED";
+    public static String sraix_no_hint = "nohint";
+    public static String sraix_event_hint = "event";
+    public static String sraix_pic_hint = "pic";
+    // AIML files
     public static String unknown_aiml_file = "unknown_aiml_file.aiml";
     public static String deleted_aiml_file = "deleted.aiml";
     public static String learnf_aiml_file = "learnf.aiml";
@@ -46,12 +53,14 @@ public class MagicStrings {
     public static String sraix_aiml_file = "sraix.aiml";
     public static String oob_aiml_file = "oob.aiml";
     public static String unfinished_aiml_file = "unfinished.aiml";
-    public static String sraix_failed = "SRAIXFAILED";
+    // filter responses
     public static String inappropriate_filter = "FILTER INAPPROPRIATE";
     public static String profanity_filter = "FILTER PROFANITY";
     public static String insult_filter = "FILTER INSULT";
+    // default templates
     public static String deleted_template = "deleted";
     public static String unfinished_template = "unfinished";
+    // AIML defaults
     public static String unknown_history_item = "unknown";
     public static String default_bot_response = "I have no answer for that.";
     public static String error_bot_response = "Something is wrong with my brain.";
@@ -70,12 +79,14 @@ public class MagicStrings {
     public static String blank_template = "blank template";
     public static String null_input = "NORESP";
     public static String null_star = "nullstar";
+    // sets and maps
     public static String set_member_string = "ISA";
     public static String remote_map_key = "external";
     public static String remote_set_key = "external";
     public static String natural_number_set_name = "number";
     public static String map_successor = "successor";
     public static String map_predecessor = "predecessor";
+    // paths
     public static String root_path = "c:/ab";
     public static String bot_path = root_path+"/bots";
     public static String bot_name_path = bot_path+"/super";

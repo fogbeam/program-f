@@ -79,8 +79,6 @@ public class AIMLProcessor {
         }
         Category c = new Category(0, pattern, that, topic, template, aimlFile);
         categories.add(c);
-        //System.out.println("CATEGORY: "+Category.categoryToIF(c));
-        //System.out.println("template="+Category.IFToCategory(Category.categoryToIF(c)).getTemplate());
     }
     public static String trimTag(String s, String tagName) {
         String stag = "<"+tagName+">";

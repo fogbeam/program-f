@@ -18,18 +18,14 @@ package org.alicebot.ab;
         Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
         Boston, MA  02110-1301, USA.
 */
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-
+import org.alicebot.ab.utils.CalendarUtils;
+import org.alicebot.ab.utils.NetworkUtils;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import org.alicebot.ab.utils.CalendarUtils;
-import org.alicebot.ab.utils.NetworkUtils;
+import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class Sraix {
@@ -93,6 +89,7 @@ public class Sraix {
 
     public static String sraixPannous(String input, String hint, Chat chatSession)  {
         try {
+            if (hint == null) hint = MagicStrings.sraix_no_hint;
             input = " "+input+" ";
             input = input.replace(" point ", ".");
             input = input.replace(" rparen ", ")");
@@ -157,7 +154,7 @@ public class Sraix {
                             else text = MagicStrings.schedule_error;
                         }
                     }
-                    else if (actions.has("say")) {
+                    else if (actions.has("say")  && !hint.equals(MagicStrings.sraix_pic_hint)) {
                         Object obj = actions.get("say");
                         if (obj instanceof JSONObject) {
                             JSONObject sObj = (JSONObject) obj;
@@ -185,7 +182,7 @@ public class Sraix {
 
                     }
                 }
-                if (hint != null && hint.equals("event") && !text.startsWith("<year>")) return MagicStrings.sraix_failed;
+                if (hint.equals(MagicStrings.sraix_event_hint) && !text.startsWith("<year>")) return MagicStrings.sraix_failed;
                 else if (text.equals(MagicStrings.sraix_failed)) return AIMLProcessor.respond(MagicStrings.sraix_failed, "nothing", "nothing", chatSession);
                 else {
                     text = text.replace("&#39;","'");

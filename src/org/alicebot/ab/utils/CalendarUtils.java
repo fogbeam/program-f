@@ -3,7 +3,6 @@ package org.alicebot.ab.utils;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.Locale;
 import java.util.TimeZone;
 
@@ -46,9 +45,9 @@ public class CalendarUtils {
           dateAsString = simpleDateFormat.format(new Date());
         }
         catch (Exception ex) {
-            System.out.println("Bad date: Format = "+jformat+" Locale = "+locale+" Timezone = "+timezone);
+            System.out.println("CalendarUtils.date Bad date: Format = "+jformat+" Locale = "+locale+" Timezone = "+timezone);
         }
-        System.out.println(dateAsString);
+        System.out.println("CalendarUtils.date: "+dateAsString);
         return dateAsString;
     }
 }

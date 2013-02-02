@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85993029-879c-47eb-9964-284ef9ebea19" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Interval.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/bot_profile.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/bot_profile.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/client_profile.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/client_profile.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/contactaction.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/contactaction.aiml" />
@@ -33,28 +33,34 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/update.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/update.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/utilities.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/utilities.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/bot_profile.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/bot_profile.aiml.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/date.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/date.aiml.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/learnf.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/learnf.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/contactaction.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/contactaction.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/deleted.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/deleted.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/personality.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/personality.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/picture.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/picture.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/profanity.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/profanity.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/reductions1.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/reductions1.aiml.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/reductions_update.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/reductions_update.aiml.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/testjp.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/testjp.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/sraix.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/sraix.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/test.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/test.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/train.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/train.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/unfinished.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/unfinished.aiml.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/utilities.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/utilities.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Ab_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Ab_jar.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/aiml2csv.bat" afterPath="$PROJECT_DIR$/aiml2csv.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/csv2aiml.bat" afterPath="$PROJECT_DIR$/csv2aiml.bat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/sample.txt" afterPath="$PROJECT_DIR$/data/sample.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foo.txt" afterPath="$PROJECT_DIR$/foo.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_ab.sh" afterPath="$PROJECT_DIR$/make_ab.sh" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run.bat" afterPath="$PROJECT_DIR$/run.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessorExtension.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessorExtension.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/Contact.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Contact.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/Graphmaster.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Graphmaster.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/Bot.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Bot.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/Category.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Category.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/MagicBooleans.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/MagicBooleans.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/PCAIMLProcessorExtension.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/PCAIMLProcessorExtension.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/PreProcessor.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/PreProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java" />
     </list>
     <ignored path="Program AB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -117,31 +123,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AIMLProcessorExtension.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessorExtension.java">
+      <file leaf-file-name="Sraix.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="124" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
+            <state line="172" column="65" selection-start="9005" selection-end="9005" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PCAIMLProcessorExtension.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/PCAIMLProcessorExtension.java">
+      <file leaf-file-name="AB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="158" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0">
+            <state line="36" column="108" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AIMLProcessor.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="483" column="10" selection-start="21178" selection-end="21178" vertical-scroll-proportion="1.2783018">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -149,52 +144,61 @@
       <file leaf-file-name="MagicStrings.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="84" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0">
+            <state line="33" column="92" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graphmaster.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Graphmaster.java">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="76" column="68" selection-start="2674" selection-end="2674" vertical-scroll-proportion="-5.6">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AIMLSet.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="114" selection-start="2135" selection-end="2135" vertical-scroll-proportion="-5.766667">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utilities.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CalendarUtils.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
+            <state line="57" column="10" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.8766756">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="24" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-3.4">
+            <state line="8" column="98" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bot.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Bot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="638" column="0" selection-start="26211" selection-end="26211" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AIMLProcessor.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="81" column="0" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Category.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="336" column="4" selection-start="11138" selection-end="11138" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MagicBooleans.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicBooleans.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="47" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -204,9 +208,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Interval.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -221,30 +223,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessorExtenion.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Contacts.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/JapaneseTokenizer.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Bot.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Graphmaster.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Contact.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLInterval.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessorExtension.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/PreProcessor.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/Interval.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/PCAIMLProcessorExtension.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Bot.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/MagicBooleans.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Category.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/Main.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="429" />
-    <option name="y" value="31" />
-    <option name="width" value="1588" />
-    <option name="height" value="829" />
+    <option name="x" value="81" />
+    <option name="y" value="107" />
+    <option name="width" value="1579" />
+    <option name="height" value="844" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -272,6 +274,16 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -282,16 +294,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Ab" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -375,13 +377,13 @@
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="editor.preferences.smartKeys" />
+    <property name="options.lastSelected" value="fileTemplates" />
     <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -549,27 +551,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="429" y="31" width="1588" height="829" extended-state="0" />
-    <editor active="false" />
+    <frame x="81" y="107" width="1579" height="844" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.54829544" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3970803" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49421966" sideWeight="0.51958764" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28612718" sideWeight="0.47835052" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3206522" sideWeight="0.47835052" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39881736" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18791065" sideWeight="0.4528302" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5471698" sideWeight="0.99678713" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18902843" sideWeight="0.671875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3125" sideWeight="0.99678713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08444444" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920382" sideWeight="0.7847534" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -633,109 +635,91 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_01/src.zip!/org/w3c/dom/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="218" column="18" selection-start="7779" selection-end="7779" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Predicates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="958" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="13" selection-start="1023" selection-end="1023" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AB.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="13" selection-start="1164" selection-end="1164" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="13" selection-start="1213" selection-end="1213" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/PreProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="233" column="48" selection-start="9102" selection-end="9102" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="24" selection-start="1394" selection-end="1394" vertical-scroll-proportion="-3.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/PCAIMLProcessorExtension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="158" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="13" selection-start="1062" selection-end="1062" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="210" selection-end="210" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="31" column="158" selection-start="1415" selection-end="1415" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessorExtension.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="124" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
+        <state line="31" column="124" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Graphmaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="68" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="114" selection-start="2135" selection-end="2135" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="133" selection-start="1745" selection-end="1745" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="110" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="172" column="65" selection-start="9005" selection-end="9005" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Bot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="638" column="0" selection-start="26211" selection-end="26211" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="81" column="0" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Category.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="336" column="4" selection-start="11138" selection-end="11138" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicBooleans.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="47" selection-start="1328" selection-end="1328" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Interval.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="98" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="108" selection-start="1492" selection-end="1492" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="84" selection-start="1593" selection-end="1593" vertical-scroll-proportion="0.0">
+        <state line="33" column="92" selection-start="1541" selection-end="1541" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Graphmaster.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="68" selection-start="2674" selection-end="2674" vertical-scroll-proportion="-5.6">
+        <state line="57" column="10" selection-start="2491" selection-end="2491" vertical-scroll-proportion="0.8766756">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Interval.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="114" selection-start="2135" selection-end="2135" vertical-scroll-proportion="-5.766667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="483" column="10" selection-start="21178" selection-end="21178" vertical-scroll-proportion="1.2783018">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -750,8 +734,8 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="library" />
               <type id="artifact" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>Ab:jar</last-edited>
@@ -808,6 +792,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>

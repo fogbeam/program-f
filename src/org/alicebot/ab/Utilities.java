@@ -24,6 +24,20 @@ import java.io.*;
 import java.util.HashSet;
 
 public class Utilities {
+    /**
+     * Excel sometimes adds mysterious formatting to CSV files.
+     * This function tries to clean it up.
+     *
+     * @param line     line from AIMLIF file
+     * @return   reformatted line
+     */
+    public static String fixCSV (String line) {
+        while (line.endsWith(";")) line = line.substring(0, line.length()-1);
+        if (line.startsWith("\"")) line = line.substring(1, line.length());
+        if (line.endsWith("\"")) line = line.substring(0, line.length()-1);
+        line = line.replaceAll("\"\"", "\"");
+        return line;
+    }
     public static String tagTrim(String xmlExpression, String tagName) {
         String stag = "<"+tagName+">";
         String etag = "</"+tagName+">";
