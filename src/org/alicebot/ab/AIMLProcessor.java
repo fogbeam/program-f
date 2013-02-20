@@ -44,7 +44,7 @@ public class AIMLProcessor {
      * @param topic                           value of topic in case this category is wrapped in a <topic> tag
      * @param aimlFile                        name of AIML file being parsed.
      */
-    public static AIMLProcessorExtension extension = new PCAIMLProcessorExtension();
+    public static AIMLProcessorExtension extension;
     private static void categoryProcessor(Node n, ArrayList<Category> categories, String topic, String aimlFile, String language) {
         String pattern, that, template;
 

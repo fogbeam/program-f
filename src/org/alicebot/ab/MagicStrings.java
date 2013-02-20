@@ -24,7 +24,8 @@ package org.alicebot.ab;
  */
 public class MagicStrings {
     // General global strings
-    public static String programNameVersion = "Program AB 0.0.4.0 beta -- AI Foundation Reference AIML 2.0 implementation";
+    public static String programNameVersion = "Program AB 0.0.4.2 beta -- AI Foundation Reference AIML 2.0 implementation";
+    public static String comment = "removed some recursion from Path";
     public static String aimlif_split_char = ",";
     public static String default_bot = "super";
     public static String default_language = "EN";

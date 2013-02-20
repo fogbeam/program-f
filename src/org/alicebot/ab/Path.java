@@ -55,8 +55,13 @@ public class Path extends ArrayList<String>{
      * @return               sentence
      */
     public static String pathToSentence (Path path) {
-        if (path == null) return "";
-        else return path.word+" "+pathToSentence(path.next);
+        String result="";
+        for (Path p = path; p != null; p = p.next) {
+            result = result+" "+path.word;
+        }
+        return result.trim();
+       /* if (path == null) return "";
+        else return path.word+" "+pathToSentence(path.next);*/
     }
 
     /**
@@ -66,7 +71,18 @@ public class Path extends ArrayList<String>{
      * @return          sequence of strings as Path
      */
     private static Path arrayToPath(String[] array) {
-        return arrayToPath(array, 0);
+        Path tail = null;
+        Path head = null;
+        for (int i = array.length-1; i >= 0; i--) {
+            head = new Path();
+            head.word = array[i];
+            head.next = tail;
+            if (tail == null) head.length = 1;
+            else head.length = tail.length + 1;
+            tail = head;
+        }
+        return head;
+        //return arrayToPath(array, 0);
     }
 
     /**

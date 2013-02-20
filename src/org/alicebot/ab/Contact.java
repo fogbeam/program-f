@@ -20,7 +20,7 @@ public class Contact {
     public static String multipleIds(String contactName) {
         String patternString = " ("+contactName.toUpperCase()+") ";
         while (patternString.contains(" ")) patternString = patternString.replace(" ", "(.*)");
-        System.out.println("Pattern='"+patternString+"'");
+        //System.out.println("Pattern='"+patternString+"'");
         Pattern pattern = Pattern.compile(patternString);
         Set<String> keys = nameIdMap.keySet();
         String result="";
@@ -38,7 +38,7 @@ public class Contact {
     public static String contactId(String contactName) {
         String patternString = " "+contactName.toUpperCase()+" ";
         while (patternString.contains(" ")) patternString = patternString.replace(" ", ".*");
-        System.out.println("Pattern='"+patternString+"'");
+        //System.out.println("Pattern='"+patternString+"'");
         Pattern pattern = Pattern.compile(patternString);
         Set<String> keys = nameIdMap.keySet();
         String result="unknown";

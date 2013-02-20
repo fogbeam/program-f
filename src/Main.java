@@ -21,19 +21,18 @@
 import org.alicebot.ab.*;
 import org.alicebot.ab.utils.IOUtils;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 
 public class Main {
     public static void main (String[] args) {
-        //AIMLWriter.familiarContactAIML();
-        //MagicBooleans.trace_mode = true;
-        //new PreProcessor(new Bot("super")).normalizeFile("c:/ab/data/normal.txt", "c:/ab/data/newnormal.txt");;
-        //Interval.test();
         MagicStrings.root_path = System.getProperty("user.dir");
         System.out.println("Working Directory = " + MagicStrings.root_path);
+        AIMLProcessor.extension =  new PCAIMLProcessorExtension();
         mainFunction(args);
     }
     public static void mainFunction (String[] args) {
@@ -54,6 +53,7 @@ public class Main {
         }
         System.out.println("trace mode = "+MagicBooleans.trace_mode);
         Graphmaster.enableShortCuts = true;
+        Timer timer = new Timer();
         Bot bot = new Bot(botName, MagicStrings.root_path, action); //
         //bot.preProcessor.normalizeFile("c:/ab/log1.txt", "c:/ab/data/lognormal.txt");
         if (bot.brain.getCategories().size() < 100) bot.brain.printgraph();
@@ -103,6 +103,8 @@ public class Main {
                 String request = textLine;
                 if (MagicBooleans.trace_mode) System.out.println("STATE="+request+":THAT="+chatSession.thatHistory.get(0).get(0)+":TOPIC="+chatSession.predicates.get("topic"));
                 String response = chatSession.multisentenceRespond(request);
+                while (response.contains("&lt;")) response = response.replace("&lt;","<");
+                while (response.contains("&gt;")) response = response.replace("&gt;",">");
                 System.out.println("Robot: "+response);
 
             }
