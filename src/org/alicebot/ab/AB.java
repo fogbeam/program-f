@@ -30,9 +30,9 @@ public class AB {
      * new AIML patterns.
      *
      */
-    public static boolean shuffle_mode = false;
-    public static boolean sort_mode = true;
-    public static boolean filter_atomic_mode = true;
+    public static boolean shuffle_mode = true;
+    public static boolean sort_mode = false;
+    public static boolean filter_atomic_mode = false;
     public static boolean filter_wild_mode = false;
     public static String logfile = MagicStrings.root_path+"/data/"+MagicStrings.ab_sample_file; //normal.txt";
     public static AIMLSet passed = new AIMLSet("passed");

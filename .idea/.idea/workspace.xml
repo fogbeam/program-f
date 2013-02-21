@@ -7,8 +7,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85993029-879c-47eb-9964-284ef9ebea19" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/bot_profile.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/bot_profile.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/client_profile.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/client_profile.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/contactaction.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/contactaction.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/date.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/date.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/deleted.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/deleted.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/dialog.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/dialog.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/familiar.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/familiar.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/help.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/help.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/inappropriate.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/inappropriate.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/inappropriate.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/inappropriate.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/inquiry.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/inquiry.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/insults.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/insults.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_ab.sh" afterPath="$PROJECT_DIR$/make_ab.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/ontology.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/ontology.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/oob.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/oob.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/personality.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/personality.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/personality.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/personality.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/picture.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/picture.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/profanity.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/profanity.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/profanity.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/profanity.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/reductions1.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/reductions1.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/reductions_update.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/reductions_update.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/reductions_update.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/reductions_update.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/sraix.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/sraix.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/test.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/test.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/testjp.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/testjp.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/that.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/that.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/train.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/train.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/udc.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/udc.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/unfinished.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/unfinished.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" afterPath="$PROJECT_DIR$/bots/super/aimlif/update.aiml.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/update.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/update.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/super/aiml/utilities.aiml" afterPath="$PROJECT_DIR$/bots/super/aiml/utilities.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Program AB.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +56,7 @@
     <file path="C:/callmom/libcallmom/gen/com/pandorabots/callmom/lib/Manifest.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361275110828" ignored="false" />
     <file path="C:/callmom/libcallmom/gen/com/pandorabots/callmom/lib/R.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361275110828" ignored="false" />
     <file path="C:/callmom/English Tutor/project.properties" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361274764497" ignored="false" />
-    <file path="C:/callmom/callmom/.idea/workspace.xml" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361306584881" ignored="false" />
+    <file path="C:/callmom/callmom/.idea/workspace.xml" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361333823280" ignored="false" />
     <file path="/Path.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361291401113" ignored="false" />
     <file path="/MagicStrings.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361291571215" ignored="false" />
     <file path="$PROJECT_DIR$/lib/Ab.jar!/org/alicebot/ab/Bot.class" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361291630019" ignored="false" />
@@ -37,8 +71,9 @@
     <file path="/TutorMainActivity.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361304588370" ignored="false" />
     <file path="C:/callmom/callmum/src/com/pandorabots/callmom/callmum/CallMumMainActivity.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361304623417" ignored="false" />
     <file path="/CallMumMainActivity.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361304622658" ignored="false" />
-    <file path="C:/callmom/basic/src/com/pandorabots/callmom/basic/DoBasicRequestThread.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361306566353" ignored="false" />
+    <file path="C:/callmom/basic/src/com/pandorabots/callmom/basic/DoBasicRequestThread.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361332265936" ignored="false" />
     <file path="/DoBasicRequestThread.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361306565609" ignored="false" />
+    <file path="/AB.java" changelist="85993029-879c-47eb-9964-284ef9ebea19" time="1361401361528" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,16 +185,16 @@
       <file leaf-file-name="MagicStrings.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="92" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.62460065">
+            <state line="26" column="65" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.7083333">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MagicNumbers.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicNumbers.java">
+      <file leaf-file-name="AB.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="13" selection-start="1031" selection-end="1031" vertical-scroll-proportion="0.0">
+            <state line="33" column="43" selection-start="1277" selection-end="1277" vertical-scroll-proportion="7.24">
               <folding />
             </state>
           </provider>
@@ -206,7 +241,6 @@
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLSet.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/utils/CalendarUtils.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/Sraix.java" />
-        <option value="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/Utilities.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/Bot.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/MagicBooleans.java" />
@@ -217,14 +251,15 @@
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/AIMLProcessor.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/Path.java" />
+        <option value="$PROJECT_DIR$/src/org/alicebot/ab/AB.java" />
         <option value="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="205" />
-    <option name="y" value="219" />
-    <option name="width" value="1331" />
+    <option name="x" value="170" />
+    <option name="y" value="43" />
+    <option name="width" value="1257" />
     <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -490,7 +525,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="205" y="219" width="1331" height="818" extended-state="0" />
+    <frame x="170" y="43" width="1257" height="818" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328125" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -501,16 +536,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23897582" sideWeight="0.15915915" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31432748" sideWeight="0.4733242" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329927" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41518468" sideWeight="0.17988668" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39881736" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27738377" sideWeight="0.7967836" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20321637" sideWeight="0.9961905" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29456067" sideWeight="0.98245615" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.99916315" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41761363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3164557" sideWeight="0.4733242" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24920382" sideWeight="0.7847534" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -575,11 +610,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Timer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/Chat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="66" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0" />
@@ -672,9 +702,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/AB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="43" selection-start="1277" selection-end="1277" vertical-scroll-proportion="7.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="92" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.62460065">
+        <state line="26" column="65" selection-start="1139" selection-end="1139" vertical-scroll-proportion="0.7083333">
           <folding />
         </state>
       </provider>
