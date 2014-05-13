@@ -18,6 +18,9 @@ package org.alicebot.ab;
         Free Software Foundation, Inc., 51 Franklin St, Fifth Floor,
         Boston, MA  02110-1301, USA.
 */
+
+import org.alicebot.ab.utils.JapaneseUtils;
+
 import java.io.*;
 import java.util.HashMap;
 
@@ -34,8 +37,16 @@ public class Predicates extends HashMap<String, String> {
      * @return            predicate value
      */
     public String put(String key, String value) {
-        if (MagicBooleans.trace_mode) System.out.println("Setting predicate "+key+" to "+value);
-        return super.put(key, value);
+		//MagicBooleans.trace("predicates.put(key: " + key + ", value: " + value + ")");
+        if (MagicBooleans.jp_tokenize) {
+            if (key.equals("topic")) value = JapaneseUtils.tokenizeSentence(value);
+        }
+        if (key.equals("topic") && value.length()==0) value = MagicStrings.unknown_predicate_value;
+        if (value.equals(MagicStrings.too_much_recursion)) value = MagicStrings.default_list_item;
+        // MagicBooleans.trace("Setting predicate key: " + key + " to value: " + value);
+		String result = super.put(key, value);
+		//MagicBooleans.trace("in predicates.put, returning: " + result);
+        return result;
     }
 
     /**
@@ -45,9 +56,11 @@ public class Predicates extends HashMap<String, String> {
      * @return    predicate value
      */
     public String get(String key) {
+		//MagicBooleans.trace("predicates.get(key: " + key + ")");
         String result = super.get(key);
-        if (result == null) return MagicStrings.unknown_predicate_value;
-        else return result;
+        if (result == null) result = MagicStrings.unknown_predicate_value;
+		//MagicBooleans.trace("in predicates.get, returning: " + result);
+        return result;
     }
 
     /**

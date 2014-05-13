@@ -1,20 +1,16 @@
 package org.alicebot.ab.utils;
 
 import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
-
 import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.InputStream;
@@ -58,6 +54,7 @@ public class DomUtils {
      * @return            XML string
      */
     public static String nodeToString(Node node) {
+		//MagicBooleans.trace("nodeToString(node: " + node + ")");
         StringWriter sw = new StringWriter();
         try {
             Transformer t = TransformerFactory.newInstance().newTransformer();
@@ -67,6 +64,8 @@ public class DomUtils {
         } catch (TransformerException te) {
             System.out.println("nodeToString Transformer Exception");
         }
-        return sw.toString();
+		String result = sw.toString();
+		//MagicBooleans.trace("nodeToString() returning: " + result);
+        return result;
     }
 }

@@ -24,14 +24,15 @@ package org.alicebot.ab;
  */
 public class MagicStrings {
     // General global strings
-    public static String programNameVersion = "Program AB 0.0.4.3 beta -- AI Foundation Reference AIML 2.0 implementation";
-    public static String comment = "removed some recursion from Path";
+    public static String program_name_version = "Program AB 0.0.6.20 beta -- AI Foundation Reference AIML 2.1 implementation";
+    public static String comment = "Modified set matching to be greedy.";
     public static String aimlif_split_char = ",";
-    public static String default_bot = "super";
+    public static String default_bot = "alice2";
     public static String default_language = "EN";
     public static String aimlif_split_char_name = "\\#Comma";
     public static String aimlif_file_suffix = ".csv";
     public static String ab_sample_file = "sample.txt";
+    public static String text_comment_mark = ";;";
     // <sraix> defaults
     public static String pannous_api_key = "guest";
     public static String pannous_login = "test-user";
@@ -39,6 +40,7 @@ public class MagicStrings {
     public static String sraix_no_hint = "nohint";
     public static String sraix_event_hint = "event";
     public static String sraix_pic_hint = "pic";
+    public static String sraix_shopping_hint = "shopping";
     // AIML files
     public static String unknown_aiml_file = "unknown_aiml_file.aiml";
     public static String deleted_aiml_file = "deleted.aiml";
@@ -62,6 +64,8 @@ public class MagicStrings {
     public static String deleted_template = "deleted";
     public static String unfinished_template = "unfinished";
     // AIML defaults
+    public static String bad_javascript = "JSFAILED";
+    public static String js_enabled = "true";
     public static String unknown_history_item = "unknown";
     public static String default_bot_response = "I have no answer for that.";
     public static String error_bot_response = "Something is wrong with my brain.";
@@ -74,6 +78,8 @@ public class MagicStrings {
     public static String unknown_bot_name = "unknown";
     public static String default_that = "unknown";
     public static String default_topic = "unknown";
+    public static String default_list_item = "NIL";
+    public static String unbound_variable = "unknown";
     public static String template_failed = "Template failed.";
     public static String too_much_recursion = "Too much recursion in AIML";
     public static String too_much_looping = "Too much looping in AIML";
@@ -87,15 +93,14 @@ public class MagicStrings {
     public static String natural_number_set_name = "number";
     public static String map_successor = "successor";
     public static String map_predecessor = "predecessor";
+    public static String map_singular = "singular";
+    public static String map_plural = "plural";
     // paths
     public static String root_path = "c:/ab";
-    public static String bot_path = root_path+"/bots";
-    public static String bot_name_path = bot_path+"/super";
-    public static String aimlif_path = bot_path+"/aimlif";
-    public static String aiml_path = bot_path+"/aiml";
-    public static String config_path = bot_path+"/config";
-    public static String log_path = bot_path+"/log";
-    public static String sets_path = bot_path+"/sets";
-    public static String maps_path = bot_path+"/maps";
+
+	public static void setRootPath(String newRootPath) {
+		root_path = newRootPath;
+	}
+
 }
 

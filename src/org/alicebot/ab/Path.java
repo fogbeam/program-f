@@ -57,7 +57,7 @@ public class Path extends ArrayList<String>{
     public static String pathToSentence (Path path) {
         String result="";
         for (Path p = path; p != null; p = p.next) {
-            result = result+" "+path.word;
+            result = result+" "+p.word;
         }
         return result.trim();
        /* if (path == null) return "";

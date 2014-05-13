@@ -29,6 +29,7 @@ public class ParseState {
     public Chat chatSession;
     public int depth;
     public Predicates vars;
+    public StarBindings starBindings;
 
      /**
       * Constructor - class has public members
@@ -48,5 +49,6 @@ public class ParseState {
         this.leaf = leaf;
         this.depth = depth;  // to prevent runaway recursion
         this.vars = new Predicates();
+        this.starBindings = leaf.starBindings;
     }
 }

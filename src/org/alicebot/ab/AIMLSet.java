@@ -33,14 +33,17 @@ public class AIMLSet extends HashSet<String> {
     String host; // for external sets
     String botid; // for external sets
     boolean isExternal = false;
-
+    Bot bot;
+    private HashSet<String> inCache = new HashSet<String>();
+    private HashSet<String> outCache = new HashSet<String>();
 
     /**
      * constructor
      * @param name    name of set
      */
-    public AIMLSet (String name) {
+    public AIMLSet (String name, Bot bot) {
         super();
+        this.bot = bot;
         this.setName = name.toLowerCase();
         if (setName.equals(MagicStrings.natural_number_set_name))  maxLength = 1;
     }
@@ -48,13 +51,15 @@ public class AIMLSet extends HashSet<String> {
         //if (isExternal)  System.out.println("External "+setName+" contains "+s+"?");
         //else  System.out.println("Internal "+setName+" contains "+s+"?");
         if (isExternal && MagicBooleans.enable_external_sets) {
+            if (inCache.contains(s)) return true;
+            if (outCache.contains(s)) return false;
             String[] split = s.split(" ");
             if (split.length > maxLength) return false;
             String query = MagicStrings.set_member_string+setName.toUpperCase()+" "+s;
             String response = Sraix.sraix(null, query, "false", null, host, botid, null, "0");
-            System.out.println("External "+setName+" contains "+s+"? "+response);
-            if (response.equals("true")) return true;
-            else return false;
+            //System.out.println("External "+setName+" contains "+s+"? "+response);
+            if (response.equals("true")) {inCache.add(s); return true;}
+            else {outCache.add(s); return false; }
         } else if (setName.equals(MagicStrings.natural_number_set_name)) {
             Pattern numberPattern = Pattern.compile("[0-9]+");
             Matcher numberMatcher = numberPattern.matcher(s);
@@ -68,7 +73,7 @@ public class AIMLSet extends HashSet<String> {
         System.out.println("Writing AIML Set "+setName);
         try{
             // Create file
-            FileWriter fstream = new FileWriter(MagicStrings.sets_path+"/"+setName+".txt");
+            FileWriter fstream = new FileWriter(bot.sets_path+"/"+setName+".txt");
             BufferedWriter out = new BufferedWriter(fstream);
             for (String p : this) {
 
@@ -118,22 +123,24 @@ public class AIMLSet extends HashSet<String> {
         return cnt;
     }
 
-    public void readAIMLSet (Bot bot) {
-        System.out.println("Reading AIML Set "+MagicStrings.sets_path+"/"+setName+".txt");
+    public int readAIMLSet (Bot bot) {
+        int cnt=0;
+        System.out.println("Reading AIML Set "+bot.sets_path+"/"+setName+".txt");
         try{
             // Open the file that is the first
             // command line parameter
-            File file = new File(MagicStrings.sets_path+"/"+setName+".txt");
+            File file = new File(bot.sets_path+"/"+setName+".txt");
             if (file.exists()) {
-                FileInputStream fstream = new FileInputStream(MagicStrings.sets_path+"/"+setName+".txt");
+                FileInputStream fstream = new FileInputStream(bot.sets_path+"/"+setName+".txt");
                 // Get the object
-                readAIMLSetFromInputStream(fstream, bot);
+                cnt = readAIMLSetFromInputStream(fstream, bot);
                 fstream.close();
             }
-            else System.out.println(MagicStrings.sets_path+"/"+setName+".txt not found");
+            else System.out.println(bot.sets_path+"/"+setName+".txt not found");
         }catch (Exception e){//Catch exception if any
             System.err.println("Error: " + e.getMessage());
         }
+        return cnt;
 
     }
 

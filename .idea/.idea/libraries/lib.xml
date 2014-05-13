@@ -13,6 +13,7 @@
       <root url="jar://$PROJECT_DIR$/lib/jgoodies-forms.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/json-20090211.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/joda-time-2.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/junit-4.11.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
