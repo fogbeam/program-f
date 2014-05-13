@@ -13,10 +13,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/Ab.jar" afterPath="$PROJECT_DIR$/lib/Ab.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/alice2/cookie.jar" afterPath="$PROJECT_DIR$/bots/alice2/cookie.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/currentevents/cookie.jar" afterPath="$PROJECT_DIR$/bots/currentevents/cookie.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/custid/cookie.jar" afterPath="$PROJECT_DIR$/bots/custid/cookie.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/jokebot/cookie.jar" afterPath="$PROJECT_DIR$/bots/jokebot/cookie.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/stocks/cookie.jar" afterPath="$PROJECT_DIR$/bots/stocks/cookie.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/weather/cookie.jar" afterPath="$PROJECT_DIR$/bots/weather/cookie.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/wndef/cookie.jar" afterPath="$PROJECT_DIR$/bots/wndef/cookie.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/alice2/aimlif/learnf.aiml.csv" afterPath="$PROJECT_DIR$/bots/alice2/aimlif/learnf.aiml.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" afterPath="$PROJECT_DIR$/src/org/alicebot/ab/MagicStrings.java" />
@@ -61,6 +58,8 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/alice2/aiml/udc.aiml" afterPath="$PROJECT_DIR$/bots/alice2/aiml/udc.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/alice2/aimlif/update.aiml.csv" afterPath="$PROJECT_DIR$/bots/alice2/aimlif/update.aiml.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/alice2/aiml/update.aiml" afterPath="$PROJECT_DIR$/bots/alice2/aiml/update.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/blank/aiml/update.aiml" afterPath="$PROJECT_DIR$/bots/blank/aiml/update.aiml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/test/aiml/update.aiml" afterPath="$PROJECT_DIR$/bots/test/aiml/update.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bots/alice2/aiml/utilities.aiml" afterPath="$PROJECT_DIR$/bots/alice2/aiml/utilities.aiml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -191,7 +190,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="3451" max-vertical-offset="3978">
               <caret line="211" column="64" selection-start-line="211" selection-start-column="64" selection-end-line="211" selection-end-column="64" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1977#1978#0" expanded="false" />
+                <element signature="e#2013#2014#0" expanded="false" />
+                <element signature="e#2059#2060#0" expanded="false" />
+                <element signature="e#2090#2091#0" expanded="false" />
+                <element signature="e#9146#9147#0" expanded="false" />
+                <element signature="e#9179#9180#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -280,8 +287,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="50" />
-    <option name="y" value="12" />
+    <option name="x" value="132" />
     <option name="width" value="1147" />
     <option name="height" value="677" />
   </component>
@@ -689,7 +695,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="50" y="12" width="1147" height="677" extended-state="0" />
+    <frame x="132" y="0" width="1147" height="677" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1113,7 +1119,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3451" max-vertical-offset="3978">
           <caret line="211" column="64" selection-start-line="211" selection-start-column="64" selection-end-line="211" selection-end-column="64" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1977#1978#0" expanded="false" />
+            <element signature="e#2013#2014#0" expanded="false" />
+            <element signature="e#2059#2060#0" expanded="false" />
+            <element signature="e#2090#2091#0" expanded="false" />
+            <element signature="e#9146#9147#0" expanded="false" />
+            <element signature="e#9179#9180#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
