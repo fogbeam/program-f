@@ -69,13 +69,13 @@ public class Properties extends HashMap<String, String> {
      */
     public int getProperties (String filename) {
         int cnt = 0;
-        System.out.println("Get Properties: "+filename);
+        if (MagicBooleans.trace_mode) System.out.println("Get Properties: "+filename);
         try {
             // Open the file that is the first
             // command line parameter
             File file = new File(filename);
             if (file.exists()) {
-                System.out.println("Exists: "+filename);
+                if (MagicBooleans.trace_mode) System.out.println("Exists: "+filename);
                 FileInputStream fstream = new FileInputStream(filename);
                 // Get the object
                 cnt = getPropertiesFromInputStream(fstream);

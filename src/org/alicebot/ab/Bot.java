@@ -60,22 +60,24 @@ public class Bot {
     public void setAllPaths (String root, String name) {
         bot_path = root+"/bots";
         bot_name_path = bot_path+"/"+name;
-        System.out.println("Name = "+name+" Path = "+bot_name_path);
+        if (MagicBooleans.trace_mode) System.out.println("Name = "+name+" Path = "+bot_name_path);
         aiml_path = bot_name_path+"/aiml";
         aimlif_path = bot_name_path+"/aimlif";
         config_path = bot_name_path+"/config";
         log_path = bot_name_path+"/logs";
         sets_path = bot_name_path+"/sets";
         maps_path = bot_name_path+"/maps";
-        System.out.println(root_path);
-        System.out.println(bot_path);
-        System.out.println(bot_name_path);
-        System.out.println(aiml_path);
-        System.out.println(aimlif_path);
-        System.out.println(config_path);
-        System.out.println(log_path);
-        System.out.println(sets_path);
-        System.out.println(maps_path);
+        if (MagicBooleans.trace_mode) {
+            System.out.println(root_path);
+            System.out.println(bot_path);
+            System.out.println(bot_name_path);
+            System.out.println(aiml_path);
+            System.out.println(aimlif_path);
+            System.out.println(config_path);
+            System.out.println(log_path);
+            System.out.println(sets_path);
+            System.out.println(maps_path);
+        }
     }
 
     /**
@@ -125,9 +127,9 @@ public class Bot {
         preProcessor = new PreProcessor(this);
         addProperties();
         cnt = addAIMLSets();
-        System.out.println("Loaded "+cnt+" set elements.");
+        if (MagicBooleans.trace_mode) System.out.println("Loaded "+cnt+" set elements.");
         cnt = addAIMLMaps();
-        System.out.println("Loaded "+cnt+" map elements");
+        if (MagicBooleans.trace_mode) System.out.println("Loaded "+cnt+" map elements");
         this.pronounSet = getPronouns();
         AIMLSet number = new AIMLSet(MagicStrings.natural_number_set_name, this);
         setMap.put(MagicStrings.natural_number_set_name, number);
@@ -142,18 +144,18 @@ public class Bot {
         //System.out.println("setMap = "+setMap);
         Date aimlDate = new Date(new File(aiml_path).lastModified());
         Date aimlIFDate = new Date(new File(aimlif_path).lastModified());
-        System.out.println("AIML modified "+aimlDate+" AIMLIF modified "+aimlIFDate);
+        if (MagicBooleans.trace_mode) System.out.println("AIML modified "+aimlDate+" AIMLIF modified "+aimlIFDate);
         //readUnfinishedIFCategories();
         MagicStrings.pannous_api_key = Utilities.getPannousAPIKey(this);
         MagicStrings.pannous_login = Utilities.getPannousLogin(this);
         if (action.equals("aiml2csv")) addCategoriesFromAIML();
         else if (action.equals("csv2aiml")) addCategoriesFromAIMLIF();
         else if (action.equals("chat-app")) {
-            System.out.println("Loading only AIMLIF files");
+            if (MagicBooleans.trace_mode) System.out.println("Loading only AIMLIF files");
             cnt = addCategoriesFromAIMLIF();
         }
         else if (aimlDate.after(aimlIFDate)) {
-            System.out.println("AIML modified after AIMLIF");
+            if (MagicBooleans.trace_mode) System.out.println("AIML modified after AIMLIF");
             cnt = addCategoriesFromAIML();
             writeAIMLIFFiles();
         }
@@ -178,7 +180,7 @@ public class Bot {
             String p = splitPronouns[i].trim();
             if (p.length() > 0) pronounSet.add(p);
         }
-        System.out.println("Read pronouns: "+pronounSet);
+        if (MagicBooleans.trace_mode) System.out.println("Read pronouns: "+pronounSet);
         return pronounSet;
     }
     /**
@@ -195,7 +197,7 @@ public class Bot {
             }*/
 
         } else if (file.contains(MagicStrings.learnf_aiml_file) ) {
-            System.out.println("Reading Learnf file");
+            if (MagicBooleans.trace_mode) System.out.println("Reading Learnf file");
             for (Category c : moreCategories) {
                 brain.addCategory(c);
                 learnfGraph.addCategory(c);
@@ -227,12 +229,12 @@ public class Bot {
             File folder = new File(aiml_path);
             if (folder.exists()) {
                 File[] listOfFiles = IOUtils.listFiles(folder);
-                System.out.println("Loading AIML files from "+aiml_path);
+                if (MagicBooleans.trace_mode) System.out.println("Loading AIML files from "+aiml_path);
                 for (File listOfFile : listOfFiles) {
                     if (listOfFile.isFile()) {
                         file = listOfFile.getName();
                         if (file.endsWith(".aiml") || file.endsWith(".AIML")) {
-                            System.out.println(file);
+                            if (MagicBooleans.trace_mode) System.out.println(file);
                             try {
                                 ArrayList<Category> moreCategories = AIMLProcessor.AIMLToCategories(aiml_path, file);
                                 addMoreCategories(file, moreCategories);
@@ -249,7 +251,7 @@ public class Bot {
         } catch (Exception ex)  {
             ex.printStackTrace();
         }
-        System.out.println("Loaded " + cnt + " categories in " + timer.elapsedTimeSecs() + " sec");
+        if (MagicBooleans.trace_mode) System.out.println("Loaded " + cnt + " categories in " + timer.elapsedTimeSecs() + " sec");
         return cnt;
     }
 
@@ -266,12 +268,12 @@ public class Bot {
             File folder = new File(aimlif_path);
             if (folder.exists()) {
                 File[] listOfFiles = IOUtils.listFiles(folder);
-                System.out.println("Loading AIML files from "+aimlif_path);
+                if (MagicBooleans.trace_mode)  System.out.println("Loading AIML files from "+aimlif_path);
                 for (File listOfFile : listOfFiles) {
                     if (listOfFile.isFile()) {
                         file = listOfFile.getName();
                         if (file.endsWith(MagicStrings.aimlif_file_suffix) || file.endsWith(MagicStrings.aimlif_file_suffix.toUpperCase())) {
-                            System.out.println(file);
+                            if (MagicBooleans.trace_mode) System.out.println(file);
                             try {
                                 ArrayList<Category> moreCategories = readIFCategories(aimlif_path + "/" + file);
                                 cnt += moreCategories.size();
@@ -289,7 +291,7 @@ public class Bot {
         } catch (Exception ex)  {
             ex.printStackTrace();
         }
-        System.out.println("Loaded " + cnt + " categories in " + timer.elapsedTimeSecs() + " sec");
+        if (MagicBooleans.trace_mode) System.out.println("Loaded " + cnt + " categories in " + timer.elapsedTimeSecs() + " sec");
         return cnt;
     }
 
@@ -402,7 +404,7 @@ public class Bot {
      * Write all AIMLIF files from bot brain
      */
     public void writeAIMLIFFiles () {
-        System.out.println("writeAIMLIFFiles");
+        if (MagicBooleans.trace_mode) System.out.println("writeAIMLIFFiles");
         HashMap<String, BufferedWriter> fileMap = new HashMap<String, BufferedWriter>();
         Category b = new Category(0, "BRAIN BUILD", "*", "*", new Date().toString(), "update.aiml");
         brain.addCategory(b);
@@ -447,7 +449,7 @@ public class Bot {
      * Write all AIML files.  Adds categories for BUILD and DEVELOPMENT ENVIRONMENT
      */
     public void writeAIMLFiles () {
-        System.out.println("writeAIMLFiles");
+        if (MagicBooleans.trace_mode) System.out.println("writeAIMLFiles");
         HashMap<String, BufferedWriter> fileMap = new HashMap<String, BufferedWriter>();
         Category b = new Category(0, "BRAIN BUILD", "*", "*", new Date().toString(), "update.aiml");
         brain.addCategory(b);
@@ -564,14 +566,14 @@ public class Bot {
             File folder = new File(sets_path);
             if (folder.exists()) {
                 File[] listOfFiles = IOUtils.listFiles(folder);
-                System.out.println("Loading AIML Sets files from "+sets_path);
+                if (MagicBooleans.trace_mode) System.out.println("Loading AIML Sets files from "+sets_path);
                 for (File listOfFile : listOfFiles) {
                     if (listOfFile.isFile()) {
                         file = listOfFile.getName();
                         if (file.endsWith(".txt") || file.endsWith(".TXT")) {
-                            System.out.println(file);
+                            if (MagicBooleans.trace_mode) System.out.println(file);
                             String setName = file.substring(0, file.length()-".txt".length());
-                            System.out.println("Read AIML Set "+setName);
+                            if (MagicBooleans.trace_mode) System.out.println("Read AIML Set "+setName);
                             AIMLSet aimlSet = new AIMLSet(setName, this);
                             cnt += aimlSet.readAIMLSet(this);
                             setMap.put(setName, aimlSet);
@@ -599,14 +601,14 @@ public class Bot {
             File folder = new File(maps_path);
             if (folder.exists()) {
                 File[] listOfFiles = IOUtils.listFiles(folder);
-                System.out.println("Loading AIML Map files from "+maps_path);
+                if (MagicBooleans.trace_mode) System.out.println("Loading AIML Map files from "+maps_path);
                 for (File listOfFile : listOfFiles) {
                     if (listOfFile.isFile()) {
                         file = listOfFile.getName();
                         if (file.endsWith(".txt") || file.endsWith(".TXT")) {
-                            System.out.println(file);
+                            if (MagicBooleans.trace_mode) System.out.println(file);
                             String mapName = file.substring(0, file.length()-".txt".length());
-                            System.out.println("Read AIML Map "+mapName);
+                            if (MagicBooleans.trace_mode) System.out.println("Read AIML Map "+mapName);
                             AIMLMap aimlMap = new AIMLMap(mapName, this);
                             cnt += aimlMap.readAIMLMap(this);
                             mapMap.put(mapName, aimlMap);
@@ -614,7 +616,7 @@ public class Bot {
                     }
                 }
             }
-            else System.out.println("addCategories: "+aiml_path+" does not exist.");
+            else System.out.println("addAIMLMaps: "+maps_path+" does not exist.");
         } catch (Exception ex)  {
             ex.printStackTrace();
         }

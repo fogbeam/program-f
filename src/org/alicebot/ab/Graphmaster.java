@@ -656,7 +656,7 @@ public class Graphmaster {
         naryCnt = 0;
         nodeStatsGraph(root);
         resultNote = bot.name+" ("+name+"): "+getCategories().size()+" categories "+nodeCnt+" nodes "+singletonCnt+" singletons "+leafCnt+" leaves "+shortCutCnt+" shortcuts "+naryCnt+" n-ary "+nodeSize+" branches "+(float)nodeSize/(float)nodeCnt+" average branching ";
-        System.out.println(resultNote);
+        if (MagicBooleans.trace_mode) System.out.println(resultNote);
     }
     public void nodeStatsGraph(Nodemapper node) {
         if (node != null) {

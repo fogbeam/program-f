@@ -125,7 +125,7 @@ public class AIMLSet extends HashSet<String> {
 
     public int readAIMLSet (Bot bot) {
         int cnt=0;
-        System.out.println("Reading AIML Set "+bot.sets_path+"/"+setName+".txt");
+        if (MagicBooleans.trace_mode) System.out.println("Reading AIML Set "+bot.sets_path+"/"+setName+".txt");
         try{
             // Open the file that is the first
             // command line parameter

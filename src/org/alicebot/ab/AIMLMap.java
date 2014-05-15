@@ -162,7 +162,7 @@ public class AIMLMap extends HashMap<String, String> {
         */
     public int readAIMLMap (Bot bot) {
         int cnt = 0;
-        System.out.println("Reading AIML Map "+bot.maps_path+"/"+mapName+".txt");
+        if (MagicBooleans.trace_mode) System.out.println("Reading AIML Map "+bot.maps_path+"/"+mapName+".txt");
         try{
             // Open the file that is the first
             // command line parameter

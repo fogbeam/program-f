@@ -31,26 +31,9 @@ public class Main {
 
 
 
-        MagicStrings.root_path = System.getProperty("user.dir");
-        System.out.println("Working Directory = " + MagicStrings.root_path);
-        AIMLProcessor.extension =  new PCAIMLProcessorExtension();
-       /* MagicBooleans.jp_tokenize =  true;
-        String[] testjp = {
-                "私 の 名前 は リチャード です",
-                "私の名前は<set>name</set>です",
-                "$私は*"
-        };
-        for (String x : testjp) {
-            System.out.println(x+"-->"+JapaneseTokenizer.tokenizeSentence(x));
-        }*/
+        MagicStrings.setRootPath();
 
-       /* Tuple tuple = new Tuple("?x ?y ?z");
-        System.out.println(tuple.printTuple());
-        tuple.bind("?x", "dog");
-        tuple.bind("?y", "cat");
-        tuple.bind("?z", "horse");
-        System.out.println(tuple.printTuple());
-        System.exit(0);*/
+        AIMLProcessor.extension =  new PCAIMLProcessorExtension();
         mainFunction(args);
     }
     public static void mainFunction (String[] args) {
@@ -65,7 +48,7 @@ public class Main {
             if (splitArg.length >= 2) {
                 String option = splitArg[0];
                 String value = splitArg[1];
-                System.out.println(option+"='"+value+"'");
+                //if (MagicBooleans.trace_mode) System.out.println(option+"='"+value+"'");
                 if (option.equals("bot")) botName = value;
                 if (option.equals("action")) action = value;
                 if (option.equals("trace")) {
@@ -80,8 +63,7 @@ public class Main {
                 }
              }
         }
-        System.out.println("trace mode = "+MagicBooleans.trace_mode);
-        System.out.println("morph mode = "+MagicBooleans.jp_tokenize);
+        if (MagicBooleans.trace_mode) System.out.println("Working Directory = " + MagicStrings.root_path);
         Graphmaster.enableShortCuts = true;
         //Timer timer = new Timer();
         Bot bot = new Bot(botName, MagicStrings.root_path, action); //
@@ -91,7 +73,7 @@ public class Main {
         //bot.preProcessor.normalizeFile("c:/ab/data/log2.txt", "c:/ab/data/log2normal.txt");
         //System.exit(0);
         if (bot.brain.getCategories().size() < MagicNumbers.brain_print_size) bot.brain.printgraph();
-        System.out.println("Action = '"+action+"'");
+        if (MagicBooleans.trace_mode) System.out.println("Action = '"+action+"'");
         if (action.equals("chat") || action.equals("chat-app")) {
 			boolean doWrites = ! action.equals("chat-app");
 			TestAB.testChat(bot, doWrites, MagicBooleans.trace_mode);

@@ -71,7 +71,7 @@ public class Chat {
         addTriples();
         predicates.put("topic", MagicStrings.default_topic);
         predicates.put("jsenabled", MagicStrings.js_enabled);
-        System.out.println("Chat Session Created for bot "+bot.name);
+        if (MagicBooleans.trace_mode) System.out.println("Chat Session Created for bot "+bot.name);
     }
 
     /**
@@ -90,7 +90,7 @@ public class Chat {
 
     int addTriples() {
         int tripleCnt = 0;
-        System.out.println("Loading Triples from "+bot.config_path+"/triples.txt");
+        if (MagicBooleans.trace_mode) System.out.println("Loading Triples from "+bot.config_path+"/triples.txt");
         File f = new File(bot.config_path+"/triples.txt");
         if (f.exists())
         try {
@@ -113,7 +113,7 @@ public class Chat {
         } catch (Exception ex) {
             ex.printStackTrace();
         }
-        System.out.println("Loaded "+tripleCnt+" triples");
+        if (MagicBooleans.trace_mode) System.out.println("Loaded "+tripleCnt+" triples");
         return tripleCnt;
     }
 

@@ -57,7 +57,7 @@ public class PreProcessor {
         personCount = readSubstitutions(bot.config_path +"/person.txt", personPatterns, personSubs);
         person2Count = readSubstitutions(bot.config_path +"/person2.txt", person2Patterns, person2Subs);
         genderCount = readSubstitutions(bot.config_path +"/gender.txt", genderPatterns, genderSubs);
-        System.out.println("Preprocessor: "+normalCount+" norms "+personCount+" persons "+person2Count+" person2 ");
+        if (MagicBooleans.trace_mode) System.out.println("Preprocessor: "+normalCount+" norms "+personCount+" persons "+person2Count+" person2 ");
     }
 
     /**
