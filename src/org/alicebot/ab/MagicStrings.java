@@ -24,7 +24,7 @@ package org.alicebot.ab;
  */
 public class MagicStrings {
     // General global strings
-    public static String program_name_version = "Program AB 0.0.6.20 beta -- AI Foundation Reference AIML 2.1 implementation";
+    public static String program_name_version = "Program AB 0.0.6.21 beta -- AI Foundation Reference AIML 2.1 implementation";
     public static String comment = "Modified set matching to be greedy.";
     public static String aimlif_split_char = ",";
     public static String default_bot = "alice2";
@@ -71,14 +71,15 @@ public class MagicStrings {
     public static String error_bot_response = "Something is wrong with my brain.";
     public static String schedule_error = "I'm unable to schedule that event.";
     public static String system_failed = "Failed to execute system command.";
-    public static String unknown_predicate_value = "unknown";
-    public static String unknown_property_value = "unknown";
-    public static String unknown_map_value = "unknown";
-    public static String unknown_customer_id = "unknown";
-    public static String unknown_bot_name = "unknown";
+    public static String default_get = "unknown";
+    public static String default_property = "unknown";
+    public static String default_map = "unknown";
+    public static String default_Customer_id = "unknown";
+    public static String default_bot_name = "unknown";
     public static String default_that = "unknown";
     public static String default_topic = "unknown";
     public static String default_list_item = "NIL";
+    public static String undefined_triple = "NIL";
     public static String unbound_variable = "unknown";
     public static String template_failed = "Template failed.";
     public static String too_much_recursion = "Too much recursion in AIML";
@@ -101,7 +102,7 @@ public class MagicStrings {
 	public static void setRootPath(String newRootPath) {
 		root_path = newRootPath;
 	}
-    public static void setRootPath() { setRootPath(System.getProperty("user.dir"));}
+    public static void setRootPath() {setRootPath(System.getProperty("user.dir"));}
 
 }
 

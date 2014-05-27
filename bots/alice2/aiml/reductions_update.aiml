@@ -16,6 +16,14 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+<category>
+<pattern><set>name</set> IS <set>name</set> S <set>familiarname</set></pattern>
+<template><srai><star/> IS THE <map><name>familiarpredicate</name><star index="3"/></map> OF <star index="2"/></srai></template>
+</category>
+<category>
+<pattern><set>name</set> S <set>familiarname</set> IS <set>name</set></pattern>
+<template><srai><star index="3"/> IS THE <map><name>familiarpredicate</name><star index="2"/></map> OF <star/></srai></template>
+</category>
 <category><pattern>WHAT IS THE TOPIC</pattern>
 <template><srai>TOPIC</srai></template>
 </category>

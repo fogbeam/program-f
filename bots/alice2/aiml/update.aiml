@@ -16,6 +16,19 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+<category><pattern>TEST DENORMALIZE</pattern>
+<template>
+<think>
+<set var="x1">555 dash 1212</set>
+<set var="x2">drwallace at gmail dot com</set>
+<set var="x3">Lparen 3 star 7 point 3 rparen slash 4</set>
+</think>
+Denormalize <get var="x1"/> = <denormalize><get var="x1"/></denormalize><br/>
+Denormalize <get var="x2"/> = <denormalize><get var="x2"/></denormalize><br/>
+Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/>
+</template>
+</category>
+
 <category><pattern>TEST HTML</pattern>
 <template><h1>A.L.I.C.E. 2.0</h1> <h2><em>Release</em> 0.9.1</h2></template>
 </category>

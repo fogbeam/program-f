@@ -101,18 +101,11 @@ public class Tuple extends HashMap<String, String> {
         return result;
     }
     public String getValue(String var) {
-        return get(var);
-        // else return "unknown";
+        String result = get(var);
+        if (result == null) return MagicStrings.default_get;
+        else return result;
     }
-    /*  public int getIndex(String var) {
-          try {
-              //System.out.println(var+" "+varToIndex.get(var));
-              return Integer.parseInt(varToIndex.get(var));
-          }
-          catch (Exception ex) {
-              return -1;
-          }
-      }*/
+
     public void bind(String var, String value) {
         if (get(var) != null && !get(var).equals(MagicStrings.unbound_variable))
             System.out.println(var+" already bound to "+get(var));

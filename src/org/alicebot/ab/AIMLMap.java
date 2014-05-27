@@ -60,7 +60,7 @@ public class AIMLMap extends HashMap<String, String> {
                 int number = Integer.parseInt(key);
                 return String.valueOf(number+1);
             } catch (Exception ex) {
-                return MagicStrings.unknown_map_value;
+                return MagicStrings.default_map;
             }
         }
         else if (mapName.equals(MagicStrings.map_predecessor)) {
@@ -68,7 +68,7 @@ public class AIMLMap extends HashMap<String, String> {
                 int number = Integer.parseInt(key);
                 return String.valueOf(number-1);
             } catch (Exception ex) {
-                return MagicStrings.unknown_map_value;
+                return MagicStrings.default_map;
             }
         }
         else if (mapName.equals("singular")) {
@@ -80,12 +80,12 @@ public class AIMLMap extends HashMap<String, String> {
         else if (isExternal && MagicBooleans.enable_external_sets) {
             //String[] split = key.split(" ");
             String query = mapName.toUpperCase()+" "+key;
-            String response = Sraix.sraix(null, query, MagicStrings.unknown_map_value, null, host, botid, null, "0");
+            String response = Sraix.sraix(null, query, MagicStrings.default_map, null, host, botid, null, "0");
             System.out.println("External "+mapName+"("+key+")="+response);
             value = response;
         }
         else value = super.get(key);
-        if (value == null) value = MagicStrings.unknown_map_value;
+        if (value == null) value = MagicStrings.default_map;
         //System.out.println("AIMLMap get "+key+"="+value);
         return value;
     }

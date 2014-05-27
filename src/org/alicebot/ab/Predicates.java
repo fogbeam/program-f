@@ -41,7 +41,7 @@ public class Predicates extends HashMap<String, String> {
         if (MagicBooleans.jp_tokenize) {
             if (key.equals("topic")) value = JapaneseUtils.tokenizeSentence(value);
         }
-        if (key.equals("topic") && value.length()==0) value = MagicStrings.unknown_predicate_value;
+        if (key.equals("topic") && value.length()==0) value = MagicStrings.default_get;
         if (value.equals(MagicStrings.too_much_recursion)) value = MagicStrings.default_list_item;
         // MagicBooleans.trace("Setting predicate key: " + key + " to value: " + value);
 		String result = super.put(key, value);
@@ -58,7 +58,7 @@ public class Predicates extends HashMap<String, String> {
     public String get(String key) {
 		//MagicBooleans.trace("predicates.get(key: " + key + ")");
         String result = super.get(key);
-        if (result == null) result = MagicStrings.unknown_predicate_value;
+        if (result == null) result = MagicStrings.default_get;
 		//MagicBooleans.trace("in predicates.get, returning: " + result);
         return result;
     }

@@ -429,7 +429,7 @@ public class AIMLProcessor {
      * @return           the map result or a string indicating the key was not found
      */
     private static String map(Node node, ParseState ps) {
-        String result = MagicStrings.unknown_map_value;
+        String result = MagicStrings.default_map;
         HashSet<String> attributeNames = Utilities.stringSet("name");
         String mapName = getAttributeOrTagValue(node, ps, "name");
         String contents = evalTagContent(node, ps, attributeNames);
@@ -439,7 +439,7 @@ public class AIMLProcessor {
             AIMLMap map = ps.chatSession.bot.mapMap.get(mapName);
             if (map != null) result = map.get(contents.toUpperCase());
             //System.out.println("AIMLProcessor map "+contents+" "+result);
-            if (result == null) result = MagicStrings.unknown_map_value;
+            if (result == null) result = MagicStrings.default_map;
             result = result.trim();
         }
         return result;
@@ -485,7 +485,7 @@ public class AIMLProcessor {
      */
     private static String get(Node node, ParseState ps) {
 		//MagicBooleans.trace("AIMLProcessor.get(node: " + node + ", ps: " + ps + ")");
-        String result = MagicStrings.unknown_predicate_value;
+        String result = MagicStrings.default_get;
         String predicateName = getAttributeOrTagValue(node, ps, "name");
         String varName = getAttributeOrTagValue(node, ps, "var");
         String tupleName = getAttributeOrTagValue(node, ps, "tuple");
@@ -503,11 +503,11 @@ public class AIMLProcessor {
     }
 
     public static String tupleGet (String tupleName, String varName) {
-        String result = MagicStrings.unknown_predicate_value;
+        String result = MagicStrings.default_get;
         Tuple tuple = Tuple.tupleMap.get(tupleName);
         //System.out.println("Tuple = "+tuple.printTuple());
         //System.out.println("Value = "+tuple.getValue(varName));
-        if (tuple == null) result = MagicStrings.unbound_variable;
+        if (tuple == null) result = MagicStrings.default_get;
         else result = tuple.getValue(varName);
         return result;
     }
@@ -521,7 +521,7 @@ public class AIMLProcessor {
      * @return         the bot property or a string indicating the property was not found.
      */
     private static String bot(Node node, ParseState ps) {
-        String result = MagicStrings.unknown_property_value;
+        String result = MagicStrings.default_property;
         //HashSet<String> attributeNames = Utilities.stringSet("name");
         String propertyName = getAttributeOrTagValue(node, ps, "name");
         if (propertyName != null)

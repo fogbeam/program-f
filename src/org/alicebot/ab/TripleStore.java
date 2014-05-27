@@ -91,7 +91,7 @@ public class TripleStore {
 
 
     public String unMapTriple(Triple triple) {
-        String id = "unknown";
+        String id = MagicStrings.undefined_triple;
         String s, p, o;
         s = triple.subject;
         p = triple.predicate;
@@ -131,7 +131,7 @@ public class TripleStore {
         existingTriples.remove(id);
         objectTriples.put(o, existingTriples);
         }
-        else id = "unknown";
+        else id = MagicStrings.undefined_triple;
 
         return id;
 
@@ -140,12 +140,15 @@ public class TripleStore {
     public Set<String> allTriples () {
         return new HashSet<String>(idTriple.keySet());
     }
+
     public String addTriple(String subject, String predicate, String object) {
+       if (subject == null || predicate == null || object == null) return MagicStrings.undefined_triple;
        Triple triple = new Triple(subject, predicate, object);
        String id = mapTriple(triple);
        return id;
     }
     public String deleteTriple(String subject, String predicate, String object) {
+        if (subject == null || predicate == null || object == null) return MagicStrings.undefined_triple;
         if (MagicBooleans.trace_mode) System.out.println("Deleting "+subject+" "+predicate+" "+object);
         Triple triple = new Triple(subject, predicate, object);
         String id = unMapTriple(triple);
@@ -240,7 +243,7 @@ public class TripleStore {
         return resultSet;
     }
     public String formatAIMLTripleList(HashSet<String> triples) {
-        String result = MagicStrings.default_list_item;//"NIL";
+        String result = MagicStrings.default_list_item;//"NIL"
         for (String x : triples) {
             result = x+" "+result;//"CONS "+x+" "+result;
         }

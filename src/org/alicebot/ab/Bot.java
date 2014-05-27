@@ -38,7 +38,7 @@ public class Bot {
     // public Graphmaster unfinishedGraph;
     //  public final ArrayList<Category> categories;
 
-    public String name=MagicStrings.unknown_bot_name;
+    public String name=MagicStrings.default_bot_name;
     public HashMap<String, AIMLSet> setMap = new HashMap<String, AIMLSet>();
     public HashMap<String, AIMLMap> mapMap = new HashMap<String, AIMLMap>();
     public HashSet<String> pronounSet = new HashSet<String>();

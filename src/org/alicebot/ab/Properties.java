@@ -33,7 +33,7 @@ public class Properties extends HashMap<String, String> {
      */
     public String get(String key) {
         String result = super.get(key);
-        if (result == null) return MagicStrings.unknown_property_value;
+        if (result == null) return MagicStrings.default_property;
         else return result;
     }
 

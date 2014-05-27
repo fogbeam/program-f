@@ -30,7 +30,7 @@ import java.io.*;
 public class Chat {
     public Bot bot;
     public boolean doWrites;
-    public String customerId = MagicStrings.unknown_customer_id;
+    public String customerId = MagicStrings.default_Customer_id;
     public History<History> thatHistory= new History<History>("that");
     public History<String> requestHistory=new History<String>("request");
     public History<String> responseHistory=new History<String>("response");
