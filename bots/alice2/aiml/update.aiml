@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: update.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -17,18 +17,15 @@
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
 <category><pattern>TEST DENORMALIZE</pattern>
-<template>
-<think>
+<template><think>
 <set var="x1">555 dash 1212</set>
 <set var="x2">drwallace at gmail dot com</set>
 <set var="x3">Lparen 3 star 7 point 3 rparen slash 4</set>
 </think>
 Denormalize <get var="x1"/> = <denormalize><get var="x1"/></denormalize><br/>
 Denormalize <get var="x2"/> = <denormalize><get var="x2"/></denormalize><br/>
-Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/>
-</template>
+Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/></template>
 </category>
-
 <category><pattern>TEST HTML</pattern>
 <template><h1>A.L.I.C.E. 2.0</h1> <h2><em>Release</em> 0.9.1</h2></template>
 </category>
@@ -45,9 +42,9 @@ Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/>
 <template><srai>TEST CRASH</srai></template>
 </category>
 <category><pattern>PROGRAM VERSION</pattern>
-<template>Program AB 0.0.6.20 beta -- AI Foundation Reference AIML 2.1 implementation</template>
+<template>Program AB 0.0.6.22 beta -- AI Foundation Reference AIML 2.1 implementation</template>
 </category>
 <category><pattern>BRAIN BUILD</pattern>
-<template>Tue May 13 11:04:28 EDT 2014</template>
+<template>Sun Jun 22 20:50:54 EDT 2014</template>
 </category>
 </aiml>

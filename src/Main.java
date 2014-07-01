@@ -40,7 +40,7 @@ public class Main {
         String botName = "alice2";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
-        String action = "chat";
+        String action="chat";
         System.out.println(MagicStrings.program_name_version);
         for (String s : args) {
             //System.out.println(s);
@@ -84,6 +84,12 @@ public class Main {
         else if (action.equals("abwq")){AB ab = new AB(bot, TestAB.sample_file);  ab.abwq();}
 		else if (action.equals("test")) { TestAB.runTests(bot, MagicBooleans.trace_mode);     }
         else if (action.equals("shadow")) { MagicBooleans.trace_mode = false; bot.shadowChecker();}
+        else if (action.equals("iqtest")) { ChatTest ct = new ChatTest(bot);
+                try {
+                    ct.testMultisentenceRespond();
+                }
+            catch (Exception ex) { ex.printStackTrace(); }
+            }
         else System.out.println("Unrecognized action "+action);
     }
     public static void convert(Bot bot, String action) {

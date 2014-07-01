@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: client_profile.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -492,86 +492,6 @@ What is it like having a pet <get var="animal"/>?
 </category>
 <category><pattern>THEM</pattern>
 <template><get name="them"/>?</template>
-</category>
-<category><pattern>SET PREDICATES</pattern>
-<template><srai>SET PREDICATES <get name="meta"/></srai></template>
-</category>
-<category><pattern>SET PREDICATES UNKNOWN</pattern>
-<template><think>
-<set name="address">where</set>
-<set name="age">how many</set>
-<set name="bestfriend">who</set>
-<set name="birthday">when</set>
-<set name="birthplace">where</set>
-<set name="boyfriend">who</set>
-<set name="brother">who</set>
-<set name="cat">what</set>
-<set name="city">which</set>
-<set name="country">which</set>
-<set name="county">which</set>
-<set name="customname">unknown</set>
-<set name="daughter">who</set>
-<set name="dialnumber">unknown</set>
-<set name="dog">who</set>
-<set name="email">what</set>
-<set name="employer">who</set>
-<set name="equalto">false</set>
-<set name="father">who</set>
-<set name="favoriteactor">who</set>
-<set name="favoriteactress">who</set>
-<set name="favoriteband">who</set>
-<set name="favoritebook">what</set>
-<set name="favoritecar">what</set>
-<set name="favoritecolor">what</set>
-<set name="favoritedrink">what</set>
-<set name="favoritefood">what</set>
-<set name="favoriteicecream">what</set>
-<set name="favoritemovie">what</set>
-<set name="favoritesong">what</set>
-<set name="favoritesport">what</set>
-<set name="favoritetvshow">what</set>
-<set name="firstname">what</set>
-<set name="friend">who</set>
-<set name="gender">unknown</set>
-<set name="girlfriend">who</set>
-<set name="hair">what</set>
-<set name="has">what</set>
-<set name="he">who</set>
-<set name="husband">who</set>
-<set name="isanumber">false</set>
-<set name="it">what</set>
-<set name="lastname">what</set>
-<set name="latitude">which</set>
-<set name="likes">what</set>
-<set name="location">where</set>
-<set name="longitute">which</set>
-<set name="meta">set</set>
-<set name="middlename">what</set>
-<set name="mother">who</set>
-<set name="name">Friend</set>
-<set name="newcontact">unknown</set>
-<set name="newpattern">NORESP</set>
-<set name="orientation">unknown</set>
-<set name="province">which</set>
-<set name="religion">unknown</set>
-<set name="residence">where</set>
-<set name="road">which</set>
-<set name="she">who</set>
-<set name="sign">which</set>
-<set name="sister">who</set>
-<set name="state">which</set>
-<set name="status">what</set>
-<set name="street">which</set>
-<set name="there">where</set>
-<set name="them">who</set>
-<set name="topic">unknown</set>
-<set name="town">which</set>
-<set name="we">who</set>
-<set name="wife">who</set>
-</think></template>
-</category>
-<category><pattern>SET PREDICATES *</pattern>
-<template>The meta predicate is set.</template>
 </category>
 <category><pattern>SET GENDER FROM NAME *</pattern>
 <template><think>

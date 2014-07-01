@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: reductions_update.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,12 +16,26 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
-<category>
-<pattern><set>name</set> IS <set>name</set> S <set>familiarname</set></pattern>
+<category><pattern>DEFINE EMAIL</pattern>
+<template><srai>DEFINE ELECTRONIC MAIL</srai></template>
+</category>
+<category><pattern>DEFINE E MAIL</pattern>
+<template><srai>DEFINE ELECTRONIC MAIL</srai></template>
+</category>
+<category><pattern>HAVE YOU READ # GOOD BOOK #</pattern>
+<template><srai>FAVORITE BOOK</srai></template>
+</category>
+<category><pattern>HAVE YOU READ # GOOD BOOKS #</pattern>
+<template><srai>FAVORITE BOOK</srai></template>
+</category>
+
+<category><pattern>WHAT # CAR DO YOU HAVE</pattern>
+<template><srai>CAR MODEL</srai></template>
+</category>
+<category><pattern><set>name</set> IS <set>name</set> S <set>familiarname</set></pattern>
 <template><srai><star/> IS THE <map><name>familiarpredicate</name><star index="3"/></map> OF <star index="2"/></srai></template>
 </category>
-<category>
-<pattern><set>name</set> S <set>familiarname</set> IS <set>name</set></pattern>
+<category><pattern><set>name</set> S <set>familiarname</set> IS <set>name</set></pattern>
 <template><srai><star index="3"/> IS THE <map><name>familiarpredicate</name><star index="2"/></map> OF <star/></srai></template>
 </category>
 <category><pattern>WHAT IS THE TOPIC</pattern>
@@ -296,6 +310,9 @@
 </category>
 <category><pattern>FAVORITE * OPERATING SYSTEM #</pattern>
 <template><srai>FAVORITE OPERATING SYSTEM</srai></template>
+</category>
+<category><pattern>WHAT MUSIC ^ DO YOU LIKE ^</pattern>
+<template><srai>FAVORITE BAND</srai></template>
 </category>
 <category><pattern>WHICH * DO YOU LIKE</pattern>
 <template><srai>FAVORITE <star/></srai></template>
@@ -2519,5 +2536,11 @@ Is <star/> <star index="4"/>?
 </category>
 <category><pattern>I AM ONLY <set>number</set></pattern>
 <template><srai>I AM <star/></srai></template>
+</category>
+<category><pattern>I LOVE A *</pattern>
+<template><srai>I LIKE A <star/></srai></template>
+</category>
+<category><pattern>IM SO *</pattern>
+<template><srai>I AM SO <star/></srai></template>
 </category>
 </aiml>

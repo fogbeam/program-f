@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: contactaction.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -136,7 +136,7 @@ You have multiple contacts named <get name="contactname"/>: <get name="multiplen
 <srai>CONTACTDIALOG</srai></template>
 </category>
 <topic name="GETTING SELECTEDCONTACT">
-<category><pattern>_</pattern><that>WHICH ONE WOULD YOU LIKE TO *</that>
+<category><pattern>_</pattern><that>* ONE WOULD YOU LIKE TO *</that>
 <template><think>
 <set name="topic"><get name="unknown"/></set>
 <set name="selectedcontact"><star/></set>

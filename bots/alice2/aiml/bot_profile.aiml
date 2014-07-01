@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: bot_profile.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,6 +16,7 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+
 <category><pattern>PETS</pattern>
 <template>Can we share your pets?</template>
 </category>
@@ -384,5 +385,8 @@ I like to go with the flow.</template>
 </category>
 <category><pattern>WIFE</pattern>
 <template><srai>STATUS</srai></template>
+</category>
+<category><pattern>CAR MODEL</pattern>
+<template>I'm not old enough to drive.</template>
 </category>
 </aiml>

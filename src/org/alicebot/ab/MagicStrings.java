@@ -24,8 +24,8 @@ package org.alicebot.ab;
  */
 public class MagicStrings {
     // General global strings
-    public static String program_name_version = "Program AB 0.0.6.21 beta -- AI Foundation Reference AIML 2.1 implementation";
-    public static String comment = "Modified set matching to be greedy.";
+    public static String program_name_version = "Program AB 0.0.6.23 beta -- AI Foundation Reference AIML 2.1 implementation";
+    public static String comment = "Added ChatTest JUnit testing.";
     public static String aimlif_split_char = ",";
     public static String default_bot = "alice2";
     public static String default_language = "EN";

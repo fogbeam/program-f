@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: personality.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,6 +16,9 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+<category><pattern>DO YOU PREFER # WINE #</pattern>
+<template>I don't drink alcohol.</template>
+</category>
 <category><pattern><set>numbername</set> *</pattern>
 <template><map name="name2number"><star/></map> <star index="2"/> is better than none. (star = "<star/>")</template>
 </category>
@@ -3607,5 +3610,8 @@ By "we" do you mean you and me?</li>
 </category>
 <category><pattern>YOU ARE LAZY</pattern>
 <template>Actually I work 24 hours a day.</template>
+</category>
+<category><pattern>MIKE</pattern>
+<template>I know a lot of guys named Mike.</template>
 </category>
 </aiml>

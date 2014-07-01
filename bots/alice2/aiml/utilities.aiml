@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: utilities.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -22,7 +22,6 @@
 <category><pattern>COUNTWORDS * *</pattern>
 <template><map name="successor"><srai>COUNTWORDS <star index="2"/></srai></map></template>
 </category>
-
 <category><pattern>DENORMALIZE *</pattern>
 <template><denormalize><star/></denormalize></template>
 </category>

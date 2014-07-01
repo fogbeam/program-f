@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: train.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: May 13, 2014 -->
+<!-- Last modified: June 22, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,10 +16,8 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
-
 <category><pattern>GOSSIP</pattern>
-<template>
-<think>
+<template><think>
 <condition name="gossiplist" value="unknown"><set name="gossiplist"><li>I don't have any gossip.</li></set></condition>
 </think>
 <learnf>
@@ -27,26 +25,18 @@
 <template><random><eval><get name="gossiplist"/></eval></random></template>
 </category>
 </learnf>
-<srai>RANDOM GOSSIP</srai>
-</template>
+<srai>RANDOM GOSSIP</srai></template>
 </category>
-    
-
-<category>
-<pattern>ADD GOSSIP *</pattern>
-<template>
-<think>
+<category><pattern>ADD GOSSIP *</pattern>
+<template><think>
 <condition name="gossiplist">
 <li value="unknown"><set name="gossiplist"><li><star/></li></set></li>
 <li><set name="gossiplist"><get name="gossiplist"/><li><star/></li></set></li>
 </condition>
 </think>
-I'll remember that.
-</template>
+I'll remember that.</template>
 </category>
-
 <category><pattern><set>name</set> IS <set>being</set> *</pattern>
-
 <template><think>
 <set var="name"><star/></set>
 <set var="being"><star index="2"/></set>
@@ -61,8 +51,7 @@ I'll remember that.
 <set var="pattern2">What does <get var="name"/> do</set>
 <set var="pattern2">Who <get var="is"/> <get var="obj"/></set>
 <set var="pattern2">Who is <get var="being"/> <get var="obj"/></set>
-<set var="response"><get var="name"/> <get var="is"/> <get var="obj"/></set>
-</template>
+<set var="response"><get var="name"/> <get var="is"/> <get var="obj"/></set></template>
 </category>
 <category><pattern><set>name</set> <set>is</set> <set>preposition</set> *</pattern>
 <template><think>

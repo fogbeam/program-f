@@ -976,7 +976,11 @@ public class AIMLProcessor {
                 if (template.length() >= "<template></template>".length()) template = template.substring("<template>".length(),template.length()-"</template>".length());
                 if (that.length() >= "<that></that>".length()) that = that.substring("<that>".length(),that.length()-"</that>".length());
                 pattern = pattern.toUpperCase();
+                pattern = pattern.replaceAll("\n"," ");
+                pattern = pattern.replaceAll("[ ]+"," ");
                 that = that.toUpperCase();
+                that = that.replaceAll("\n"," ");
+                that = that.replaceAll("[ ]+"," ");
                 if (MagicBooleans.trace_mode) {
                     System.out.println("Learn Pattern = "+pattern);
                     System.out.println("Learn That = "+that);

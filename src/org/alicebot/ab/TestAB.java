@@ -20,6 +20,15 @@ public class TestAB {
                 bot.writeQuit();
                 System.exit(0);
             }
+            else if (textLine.equals("iqtest")) {
+                ChatTest ct = new ChatTest(bot);
+                try {
+                    ct.testMultisentenceRespond();
+                }
+                catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+            }
             else if (textLine.equals("ab")) testAB(bot, sample_file);
             else {
                 String request = textLine;
@@ -61,6 +70,7 @@ public class TestAB {
         while (textLine != null) {
             if (textLine == null || textLine.length() < 1)  textLine = MagicStrings.null_input;
             if (textLine.equals("q")) System.exit(0);
+
             else if (textLine.equals("wq")) {
                 bot.writeQuit();
                 System.exit(0);
