@@ -72,7 +72,6 @@
 ".es"," dot es "
 ".mil"," dot mil "
 ".co"," dot co "
-" a l i c e "," ALICE "
 " a.l.i.c.e "," ALICE "
 " a.l.i.c.e. "," ALICE "
 " a."," A "

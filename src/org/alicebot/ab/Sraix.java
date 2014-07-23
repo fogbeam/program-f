@@ -264,17 +264,22 @@ public class Sraix {
     } // sraixPannous
 
     public static void log (String pattern, String template) {
+        System.out.println("Logging "+pattern);
+        template = template.trim();
         if (MagicBooleans.cache_sraix)
         try{
             if (!template.contains("<year>") && !template.contains("No facilities")) {
             template = template.replace("\n", "\\#Newline");
             template = template.replace(",", MagicStrings.aimlif_split_char_name);
-            template = template.replaceAll("<a(.*)</a>","");
-            FileWriter fstream = new FileWriter("c:/ab/bots/sraixcache/aimlif/sraixcache.aiml.csv",true);
-            BufferedWriter fbw = new BufferedWriter(fstream);
-            fbw.write("0,"+pattern+",*,*,"+template+",sraixcache.aiml.csv");
-            fbw.newLine();
-            fbw.close();
+            template = template.replaceAll("<a(.*)</a>", "");
+            template = template.trim();
+            if (template.length() > 0) {
+                FileWriter fstream = new FileWriter("c:/ab/bots/sraixcache/aimlif/sraixcache.aiml.csv", true);
+                BufferedWriter fbw = new BufferedWriter(fstream);
+                fbw.write("0," + pattern + ",*,*," + template + ",sraixcache.aiml");
+                fbw.newLine();
+                fbw.close();
+            }
             }
         }catch (Exception e) {
             System.out.println("Error: " + e.getMessage());

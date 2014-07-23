@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: lists.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -31,20 +31,6 @@
 </think> <loop/></li>
 </condition></template>
 </category>
-<category><pattern>REVERSE *</pattern>
-<template><think>
-<set var="list"><star/></set>
-<set var="reverse"/>
-</think>
-<condition var="list">
-<li value="NIL"><get var="reverse"/></li>
-<li><think>
-<set var="reverse"><first><get var="list"/></first> <get var="reverse"/></set>
-<set var="list"><rest><get var="list"/></rest></set>
-</think> <loop/>
-</li>
-</condition></template>
-</category>
 <topic name="REMOVE LIST ITEM">
 <category><pattern>_</pattern><that>WHICH ITEM WOULD YOU LIKE TO REMOVE</that>
 <template><think><set name="selecteditem"><star/></set>
@@ -61,21 +47,21 @@
 </category>
 <category><pattern>ADD _ TO MY LIST</pattern>
 <template>I've added <star/> to your list.
-<learnf>
+<learn>
 <category><pattern>MYLIST</pattern>
 <template><eval><srai>CONS <star/> <srai>MYLIST</srai></srai></eval>
 </template>
 </category>
-</learnf></template>
+</learn></template>
 </category>
 <category><pattern>ADD _ TO MY * LIST</pattern>
 <template>I've added <star/> to your <star index="2"/> list.
-<learnf>
+<learn>
 <category><pattern>MY <eval><star index="2"/></eval> LIST</pattern>
 <template><eval><srai>CONS <star/> <srai>MY <star index="2"/> LIST</srai></srai></eval>
 </template>
 </category>
-</learnf></template>
+</learn></template>
 </category>
 <category><pattern>LISTCAR *</pattern>
 <template>undefined</template>
@@ -149,19 +135,19 @@
 </category>
 <category><pattern>MAKE A * LIST</pattern>
 <template>Initializing your <star/> list.
-<learnf>
+<learn>
 <category><pattern>MY <eval><star/></eval> LIST</pattern>
 <template>NIL</template>
 </category>
-</learnf></template>
+</learn></template>
 </category>
 <category><pattern>MAKE A LIST</pattern>
 <template>Initializing your list.
-<learnf>
+<learn>
 <category><pattern>MYLIST</pattern>
 <template>NIL</template>
 </category>
-</learnf></template>
+</learn></template>
 </category>
 <category><pattern>READ MY * LIST</pattern>
 <template>Here is your <star/> list: <srai>COMMASEPARATE <srai>MY <star/> LIST</srai></srai></template>
@@ -180,11 +166,11 @@ List value=<srai><get name="listname"/></srai>.
 -->
 <condition name="isamember">
 <li value="true">Taking <star/> off your list.
-<learnf>
+<learn>
 <category><pattern><eval><get name="listname"/></eval></pattern>
 <template><eval><srai>REMOVEITEM <star/> FROM LIST <srai><get name="listname"/></srai></srai></eval></template>
 </category>
-</learnf>
+</learn>
 </li>
 <li>
 <oob><dialog>

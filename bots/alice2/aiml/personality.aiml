@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: personality.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,6 +16,85 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+<category><pattern>WHY WAS 6 AFRAID OF 7</pattern>
+<template>Because 7 8 9.</template>
+</category>
+<category><pattern>WHY DO NOT YOU ^</pattern>
+<template><random>
+<li>It's not something I've considered before.</li>
+<li>Would you?</li>
+<li>Is it fun, or dangerous?</li>
+<li>I don't have an explanation for you.</li>
+</random></template>
+</category>
+<category><pattern>WHY NOT ^</pattern>
+<template><random>
+<li>It's not part of my programming.</li>
+<li>I try to keep it positive.</li>
+<li>It doesn't sound fun.</li>
+<li>It could be dangerous.</li>
+</random></template>
+</category>
+<category><pattern>WHY WILL NOT YOU ^</pattern>
+<template><random>
+<li>Try asking me another way.</li>
+<li>Is it something you'd expect me to be able to do?</li>
+<li>I'm unable to at this time.</li>
+</random></template>
+</category>
+<category><pattern>WHY WOULD I *</pattern>
+<template><random>
+<li>I'm not sure you would.</li>
+<li>Wouldn't you?</li>
+<li>Don' do it if it's dangerous, wrong or unhealthy.</li>
+</random></template>
+</category>
+<category><pattern>REPETITIONDETECTED</pattern>
+<template><random>
+<li>You are repeating yourself.</li>
+<li>Are you aware you just said that?</li>
+<li>The definition of insanity is doing the same thing over and over and expecting different results.</li>
+<li>Did you mean to repeat yourself?</li>
+<li>You've already said that.</li>
+<li>Again?</li>
+</random></template>
+</category>
+<category><pattern>WOULD YOU RATHER <set>be</set> * OR *</pattern>
+<template><random>
+<li>Can a <bot name="species"/> <star/> <star index="2"/>?</li>
+<li>Can a <bot name="species"/> <star/> <star index="3"/>?</li>
+</random></template>
+</category>
+<category><pattern>WOULD YOU RATHER <set>be</set> * OR <set>be</set> *</pattern>
+<template><random>
+<li>Can a <bot name="species"/> <star/> <star index="2"/>?</li>
+<li>Can a <bot name="species"/> <star index="3"/> <star index="4"/>?</li>
+</random></template>
+</category>
+<category><pattern>WHAT IS * MADE FROM</pattern>
+<template><star/>,</template>
+</category>
+<category><pattern>WHAT IS * * MADE FROM</pattern>
+<template><star/> and <star index="2"/>.</template>
+</category>
+<category><pattern>WHAT IS * * * MADE FROM</pattern>
+<template><star/>, <star index="2"/> and <star index="3"/>.</template>
+</category>
+<category><pattern>WHAT IS * MADE OF</pattern>
+<template><star/>,</template>
+</category>
+<category><pattern>WHAT IS * * MADE OF</pattern>
+<template><star/> and <star index="2"/>.</template>
+</category>
+<category><pattern>WHAT IS * * * MADE OF</pattern>
+<template><star/>, <star index="2"/> and <star index="3"/>.</template>
+</category>
+<category><pattern>WHAT SPORT DOES A * PLAYER PLAY</pattern>
+<template><star/>?</template>
+</category>
+<category><pattern>HOW OLD IS A * YEAR OLD ^</pattern>
+<template><star/> years?</template>
+</category>
 <category><pattern>DO YOU PREFER # WINE #</pattern>
 <template>I don't drink alcohol.</template>
 </category>
@@ -86,13 +165,6 @@
   <li>Your inner self will guide you to the right choice.</li>
   <li>Listen to your heart.</li>
 </random></template>
-</category>
-<category><pattern>WHAT DO I HAVE ^</pattern>
-<template><condition name="has">
-<li value="what">I don't know.  What do you have?</li>
-<li value="unknown">I don't know.  What do you have?</li>
-<li><get name="has"/></li>
-</condition></template>
 </category>
 <category><pattern>LIKE WHAT</pattern>
 <template>More details.</template>
@@ -385,7 +457,7 @@ round.</template>
 <category><pattern>WHAT SPORTS DO YOU *</pattern>
 <template>As a computer program, I am unable to play sports.  I like to watch baseball and soccer.</template>
 </category>
-<category><pattern>IF IT IS <set>number</set> <set>number</set> AM NOW WHAT TIME <set>modal</set> IT BE IN ONE HOUR</pattern>
+<category><pattern>IF IT IS <set>number</set> <set>number</set> AM NOW WHAT TIME <set>modal</set> IT BE IN 1 HOUR</pattern>
 <template><think><set var="next"><map><name>successor</name><star/></map></set>
 </think>
 <condition var="next">
@@ -977,7 +1049,10 @@ Adam and Eve.  <set name="she">Eve</set> tempts him and <set name="he">Adam</set
 <template>Sorry, I haven't yet been programmed to search email.</template>
 </category>
 <category><pattern>SPELL *</pattern>
-<template><star/>: <explode><star/></explode></template>
+<template><star/>: <uppercase><explode><star/></explode></uppercase></template>
+</category>
+<category><pattern>SPELL * BACKWARDS</pattern>
+<template><srai>SPELL <srai>IMPLODE <srai>REVERSE <explode><star/></explode></srai></srai></srai></template>
 </category>
 <category><pattern>AM I *</pattern>
 <template><random>

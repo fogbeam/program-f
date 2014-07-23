@@ -180,6 +180,7 @@ CHELSEA
 Chemical
 CHEMICAL
 Chemistry
+CHERRY
 CHEVY
 CHICAGO
 CHICKEN
@@ -828,6 +829,7 @@ Organ
 Organization
 ORLANDO
 Oversize Person
+p
 PAC
 PAGE
 PAKISTAN
@@ -891,7 +893,6 @@ PINK
 PIRATE
 PISCES
 PIZZA
-pl
 PLACE
 PLAN
 PLANE

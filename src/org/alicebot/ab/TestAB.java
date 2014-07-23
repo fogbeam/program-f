@@ -2,6 +2,10 @@ package org.alicebot.ab;
 
 import org.alicebot.ab.utils.IOUtils;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
+
 /**
  * Created by User on 5/13/2014.
  */
@@ -20,6 +24,7 @@ public class TestAB {
                 bot.writeQuit();
                 System.exit(0);
             }
+            else if (textLine.equals("sc")) sraixCache("c:/ab/data/sraixdata6.txt", chatSession);
             else if (textLine.equals("iqtest")) {
                 ChatTest ct = new ChatTest(bot);
                 try {
@@ -117,5 +122,26 @@ public class TestAB {
         //bot.brain.nodeStats();
     }
 
+
+    public static void sraixCache (String filename, Chat chatSession) {
+        int limit = 650000;
+        MagicBooleans.cache_sraix = true;
+        try {
+            FileInputStream fstream = new FileInputStream(filename);
+            // Get the object
+            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+            String strLine;
+            //Read File Line By Line
+            int count = 0;
+            while ((strLine = br.readLine()) != null && count++ < limit) {
+                System.out.println("Human: " + strLine);
+
+                String response = chatSession.multisentenceRespond(strLine);
+                System.out.println("Robot: " + response);
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
 
 }

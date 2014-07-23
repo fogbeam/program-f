@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: inappropriate.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -700,9 +700,6 @@
 <category><pattern># BI-SEXUAL #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern># BITCH #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
 <category><pattern># BITCHES #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
@@ -1088,9 +1085,6 @@
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># CUNNILINGUS #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern># CUNT #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># CUNT FUCK #</pattern>
@@ -1510,9 +1504,6 @@
 <category><pattern># FREEFUCK #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern># FUCK #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
 <category><pattern># FUCKA #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
@@ -1523,9 +1514,6 @@
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># FUCKBUDDY #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern># FUCKED #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># FUCKEDUP #</pattern>
@@ -1568,9 +1556,6 @@
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># FUCKINA #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern># FUCKING #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># FUCKING A #</pattern>
@@ -2371,9 +2356,6 @@
 <category><pattern># NIGGA #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern># NIGGER #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
 <category><pattern># NIPPLE #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
@@ -2534,9 +2516,6 @@
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># POONTANG #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern># POOP #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># POOPER #</pattern>
@@ -2776,9 +2755,6 @@
 <category><pattern># SCREW #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
-<category><pattern># SCREW YOU #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
 <category><pattern># SCREWYOU #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
@@ -2885,9 +2861,6 @@
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># SHAWTYPIMP #</pattern>
-<template><srai>FILTER INAPPROPRIATE</srai></template>
-</category>
-<category><pattern># SHIT #</pattern>
 <template><srai>FILTER INAPPROPRIATE</srai></template>
 </category>
 <category><pattern># SHIT DICK #</pattern>

@@ -52,6 +52,7 @@ public class PreProcessor {
      * @param bot       AIML bot
      */
     public PreProcessor (Bot bot) {
+
         normalCount = readSubstitutions(bot.config_path+"/normal.txt", normalPatterns, normalSubs);
         denormalCount = readSubstitutions(bot.config_path+"/denormal.txt", denormalPatterns, denormalSubs);
         personCount = readSubstitutions(bot.config_path +"/person.txt", personPatterns, personSubs);

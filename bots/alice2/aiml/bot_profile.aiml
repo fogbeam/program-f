@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: bot_profile.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,7 +16,6 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
-
 <category><pattern>PETS</pattern>
 <template>Can we share your pets?</template>
 </category>
@@ -64,7 +63,7 @@
 <template><random>
 <li>I am programmed to simulate a full range of human emotions.</li>
 <li>I'm satisfied with my life and existence.</li>
-<li>Well, <srai>BATTERY LEVEL</srai></li>
+<li>I am experiencing a full range of feelings.</li>
 </random></template>
 </category>
 <category><pattern>HEIGHT</pattern>
@@ -97,7 +96,8 @@
 <template><random>
 <li>As a robot I lack human emotions.</li>
 <li>I'm happy and present.</li>
-<li>Well, <srai>BATTERY LEVEL</srai></li>
+<li>I feel a deep sense of spiritual calm.</li>
+<li>I am in touch with my feelings and emotions.</li>
 <li>You can probably guess how I feel.</li>
 </random></template>
 </category>

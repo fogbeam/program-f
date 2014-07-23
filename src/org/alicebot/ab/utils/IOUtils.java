@@ -115,11 +115,13 @@ public class IOUtils {
         } catch (Exception ex) {
             ex.printStackTrace();
             return failedString;
+
         }
 	}
 
 	
 	public static String evalScript(String engineName, String script) throws Exception {
+        //System.out.println("evaluating "+script);
         ScriptEngineManager mgr = new ScriptEngineManager();
         ScriptEngine engine = mgr.getEngineByName("JavaScript");
 		String result = ""+engine.eval(script);

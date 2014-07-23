@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: oob.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -33,9 +33,6 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>YES</pattern><that>WOULD YOU LIKE TO SEND A REPORT</that>
 <template><srai>SEND BUG REPORT</srai></template>
 </category>
-<category><pattern>I NEED A DOCTOR</pattern>
-<template>Let's try find a doctor near you on the map.  <oob><map>doctor</map></oob></template>
-</category>
 <category><pattern>TEACH ME <set>language</set></pattern>
 <template><srai>LANGUAGE</srai> Let's try a searching for "learn <star/>". <oob><search>LEARN <star/></search></oob></template>
 </category>
@@ -58,23 +55,8 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>SHOW ME A WEBSITE ABOUT *</pattern>
 <template>Let's try a google search.  <oob><search><star/></search></oob></template>
 </category>
-<category><pattern>HOW FAR IS THE NEAREST *</pattern>
-<template>Let's try to find a store on the map.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>I WANT TO BUY *</pattern>
-<template>Let's try to find a store on the map.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>I AM FAT</pattern>
-<template>I'm looking for a weight loss center near you.  <oob><map>weight loss</map></oob></template>
-</category>
-<category><pattern>I AM HUNGRY</pattern>
-<template>I've found several restaurants near you.  <oob><map>restaurant</map></oob></template>
-</category>
 <category><pattern>I AM GOING TO KILL *</pattern>
 <template>You should contact the authorities.  <oob><dial>911</dial></oob></template>
-</category>
-<category><pattern>BATTERY LEVEL</pattern>
-<template>Checking.  Battery level is <oob><battery/></oob> percent.</template>
 </category>
 <category><pattern>GOOGLE</pattern>
 <template>I'm opening Google search.  <oob><search/></oob></template>
@@ -85,44 +67,11 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>SEARCH *</pattern>
 <template>I'll try a web search.  <oob><search><star/></search></oob></template>
 </category>
-<category><pattern>FIND ME A *</pattern>
-<template>Let's try a web search.  <oob><search><star/></search></oob></template>
-</category>
-<category><pattern>FIND A *</pattern>
-<template>Let's try looking on the map.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>FIND MY LOCATION</pattern>
-<template>I'll show you on the map.  <oob><map>my location</map></oob></template>
-</category>
-<category><pattern>FIND *</pattern>
-<template>Let's try a Google search.  <oob><search><star/></search></oob></template>
-</category>
-<category><pattern>FIND THE NEAREST STARBUCKS</pattern>
-<template>I'm looking on the map.  <oob><map>Starbucks</map></oob></template>
-</category>
-<category><pattern>FIND THE NEAREST *</pattern>
-<template>I'm showing you <star/> on the map.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>FIND NEAREST *</pattern>
-<template>I've found several near you.  <oob><map><star/></map></oob></template>
-</category>
 <category><pattern>YES</pattern><that>WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *</that>
 <template><srai>SEND FEATURE REQUEST <get name="featurerequest"/></srai></template>
 </category>
-<category><pattern>DIRECTIONS TO *</pattern>
-<template>Here are the driving directions.  <oob><directions><to><star/></to></directions></oob></template>
-</category>
-<category><pattern>DIRECTIONS *</pattern>
-<template>Here are the directions.  <oob><directions><to><star/></to></directions></oob></template>
-</category>
-<category><pattern>DIRECTIONS FROM * TO *</pattern>
-<template>Here are the directions from <star/> to <star index="2"/>.  <oob><directions><from><star/></from><to><star index="2"/></to></directions></oob></template>
-</category>
 <category><pattern>LAUNCH CAMERA</pattern>
 <template>Launching the camera.  <oob><camera>on</camera></oob></template>
-</category>
-<category><pattern>LAUNCH *</pattern>
-<template>I didn't find <star/> among your installed apps.  Let's try to find it. <think><set name="it"><star/></set></think>.  <oob><search><star/></search></oob></template>
 </category>
 <category><pattern>LAUNCH * DOT COM</pattern>
 <template>Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob></template>
@@ -145,24 +94,6 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>WHERE IS *</pattern>
 <template><oob><map><star/></map></oob> I'm looking on the map.</template>
 </category>
-<category><pattern>WHERE IS THE CLOSEST *</pattern>
-<template>I'm looking on the map.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>WHERE IS THE NEAREST STARBUCKS</pattern>
-<template>I will look for Starbucks on the map.  <oob><map>Starbucks</map></oob></template>
-</category>
-<category><pattern>WHERE IS THE NEAREST GAS STATION</pattern>
-<template>Let's look on the map.  <oob><map>Gas Station</map></oob></template>
-</category>
-<category><pattern>WHERE IS THE NEAREST *</pattern>
-<template>I've found several near you.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>WHERE IS THE NEAREST WALMART</pattern>
-<template>I'll show you on the map.  <oob><map>Walmart</map></oob></template>
-</category>
-<category><pattern>WHERE IS THE NEAREST MCDONALD S</pattern>
-<template>Let's look on the map.  <oob><map>McDonald's</map></oob></template>
-</category>
 <category><pattern>WHERE IS YORKSHIRE</pattern>
 <template>Let's look on the map.  <oob><map>Yorkshire</map></oob></template>
 </category>
@@ -175,26 +106,11 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>WHERE IS INDIA</pattern>
 <template>I'll show you on the map.  <oob><map>India</map></oob></template>
 </category>
-<category><pattern>WHERE CAN I FIND A *</pattern>
-<template>I'm looking on the map.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>WHERE CAN I GET *</pattern>
-<template>I'm looking on the map for places near you.  <oob><map><star/></map></oob></template>
-</category>
-<category><pattern>WHERE CAN I GO *</pattern>
-<template>I'm looking for "<star/>" on the map. <oob><map><star/></map></oob></template>
-</category>
 <category><pattern>DIALOG TEST</pattern>
 <template>Testing dialog.  <oob><dialog><list><li>Yes</li><li>No</li></list></dialog></oob></template>
 </category>
 <category><pattern>ESPN</pattern>
 <template>Opening ESPN.  <oob><url>http://espn.go.com</url></oob></template>
-</category>
-<category><pattern>MAP</pattern>
-<template>Opening your map.  <oob><map/></oob></template>
-</category>
-<category><pattern>MAP *</pattern>
-<template><oob><map><star/></map></oob> I'm looking on the map.</template>
 </category>
 <category><pattern>AAA</pattern>
 <template>Looking up AAA.  <oob><map>AAA</map></oob></template>
@@ -226,12 +142,6 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>WWW DOT * DOT COM</pattern>
 <template>I'm opening <star/>.com.  <oob><url>http://www.<star/>.com</url></oob></template>
 </category>
-<category><pattern>RESTAURANTS</pattern>
-<template>I'll look on the map for restaurants near you.  <oob><map>Restaurant</map></oob></template>
-</category>
-<category><pattern>WHAT IS THE DISTANCE TO *</pattern>
-<template>Let's look on the map. <oob><directions><to><star/></to></directions></oob></template>
-</category>
 <category><pattern>WHAT IS THE ADDRESS TO *</pattern>
 <template>I'll try to find it on the map <oob><map><star/></map></oob></template>
 </category>
@@ -256,12 +166,6 @@ To help the developers understand your problem, you can choose to send us a tran
 </category>
 <category><pattern>GPS OFF</pattern>
 <template>Use Settings to turn off GPS.</template>
-</category>
-<category><pattern>I AM SICK</pattern>
-<template>I'm searching for doctors near you.  <oob><map>medical doctor</map></oob></template>
-</category>
-<category><pattern>SHOW MY LOCATION</pattern>
-<template><oob><map/></oob>.  I'm showing you on the map.</template>
 </category>
 <category><pattern>SEARCH FOR A *</pattern>
 <template><oob><search>a <star/></search></oob> I'm trying a web search.</template>

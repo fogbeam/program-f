@@ -37,7 +37,7 @@ public class Main {
         mainFunction(args);
     }
     public static void mainFunction (String[] args) {
-        String botName = "alice2";
+        String botName = "loebner";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
         String action="chat";
@@ -176,6 +176,26 @@ public class Main {
                 bot.brain.addCategory(c);
 
 
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+    }
+
+    public static void sraixCache (String filename, Chat chatSession) {
+        int limit = 1000;
+        try {
+            FileInputStream fstream = new FileInputStream(filename);
+            // Get the object
+            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+            String strLine;
+            //Read File Line By Line
+            int count = 0;
+            while ((strLine = br.readLine()) != null && count++ < limit) {
+                System.out.println("Human: " + strLine);
+
+                String response = chatSession.multisentenceRespond(strLine);
+                System.out.println("Robot: " + response);
             }
         } catch (Exception ex) {
             ex.printStackTrace();

@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: reductions_update.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,8 +16,193 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
-<category><pattern>DEFINE EMAIL</pattern>
-<template><srai>DEFINE ELECTRONIC MAIL</srai></template>
+<category><pattern>WHAT THE *</pattern>
+<template><srai>WHAT IS THE <star/></srai></template>
+</category>
+<category><pattern>WHAT THE HELL IS *</pattern>
+<template><srai>WHAT IS <star/></srai></template>
+</category>
+<category><pattern>WHAT THE DAY *</pattern>
+<template><srai>WHAT IS THE DAY <star/></srai></template>
+</category>
+<category><pattern>WHAT THE DATE *</pattern>
+<template><srai>WHAT IS THE DATE <star/></srai></template>
+</category>
+<category><pattern>WHAT THE HECK IS *</pattern>
+<template><srai>WHAT IS <star/></srai></template>
+</category>
+<category><pattern>WHY THEY CALL YOU *</pattern>
+<template><srai>WHY ARE YOU CALLED <star/></srai></template>
+</category>
+<category><pattern>WHY WHAT *</pattern>
+<template><srai>WHAT <star/></srai></template>
+</category>
+<category><pattern>WHY * IS *</pattern>
+<template><srai>WHY IS <star/> <star index="2"/></srai></template>
+</category>
+<category><pattern>WHY WE SHOULD *</pattern>
+<template><srai>WHY SHOULD WE <star/></srai></template>
+</category>
+<category><pattern>WHY WE CAN *</pattern>
+<template><srai>WHY CAN WE <star/></srai></template>
+</category>
+<category><pattern>WHERE * WENT</pattern>
+<template><srai>WHERE IS <star/> GO</srai></template>
+</category>
+<category><pattern>WHAT _ INITIAL LETTERS OF * AND *</pattern>
+<template><srai>ACRONYM <star index="2"/> <star index="3"/></srai></template>
+</category>
+<category><pattern>_ ACRONYM <set>preposition</set> * AND *</pattern>
+<template><srai>ACRONYM <star index="3"/> <star index="4"/></srai></template>
+</category>
+<category><pattern>_ ACRONYM <set>preposition</set> *</pattern>
+<template><srai>ACRONYM <star index="3"/></srai></template>
+</category>
+<category><pattern>REARRANGE _ MAKE A WORD *</pattern>
+<template><srai>ANAGRAMWORDS <star index="2"/></srai></template>
+</category>
+<category><pattern>_ ANAGRAM FOR *</pattern>
+<template><srai>ANAGRAMWORDS <star/></srai></template>
+</category>
+<category><pattern>_ ANAGRAM OF *</pattern>
+<template><srai>ANAGRAMWORDS <star/></srai></template>
+</category>
+<category><pattern>_ ANAGRAMS FOR *</pattern>
+<template><srai>ANAGRAMWORDS <star/></srai></template>
+</category>
+<category><pattern>_ ANAGRAMS OF *</pattern>
+<template><srai>ANAGRAMWORDS <star/></srai></template>
+</category>
+<category><pattern>WHAT # RHYMES WITH *</pattern>
+<template><srai>RHYME <star index="2"/></srai></template>
+</category>
+<category><pattern>TELL ME # RHYME FOR *</pattern>
+<template><srai>RHYME <star index="2"/></srai></template>
+</category>
+<category><pattern>FIND # RHYME FOR *</pattern>
+<template><srai>RHYME <star index="2"/></srai></template>
+</category>
+<category><pattern>NAME # RHYME FOR *</pattern>
+<template><srai>RHYME <star index="2"/></srai></template>
+</category>
+<category><pattern>CAN YOU EAT *</pattern>
+<template><srai>DIET</srai></template>
+</category>
+<category><pattern>MY PARENTS ARE <set>name</set> AND <set>name</set></pattern>
+<template><think><set var="gender"><srai>GENDERNAME <star/></srai></set></think>
+<condition var="gender">
+<li value="F"><srai>MY MOTHER IS <star/></srai> <srai>MY FATHER IS <star index="2"/></srai></li>
+<li><srai>MY FATHER IS <star/></srai> <srai>MY MOTHER IS <star index="2"/></srai></li>
+</condition></template>
+</category>
+<category><pattern>WHAT DO I HAVE THAT IS <set>color</set></pattern>
+<template><srai>WHAT <star/> OBJECT DO I HAVE</srai></template>
+</category>
+<category><pattern>MY BIRTHDAY IS <set>month</set> <set>number</set> <set>number</set></pattern>
+<template><srai>MY BIRTHDATE IS <star/> <star index="2"/> <star index="3"/></srai></template>
+</category>
+<category><pattern>MY BIRTHDAY IS <set>month</set> <set>ordinal</set> <set>number</set></pattern>
+<template><srai>MY BIRTHDATE IS <star/> <star index="2"/> <star index="3"/></srai></template>
+</category>
+<category><pattern>_ TO THE LEFT OF *</pattern>
+<template><srai><star/> left of <star index="2"/></srai></template>
+</category>
+<category><pattern>_ TO THE RIGHT OF *</pattern>
+<template><srai><star/> right of <star index="2"/></srai></template>
+</category>
+<category><pattern>_ TO THE EAST OF *</pattern>
+<template><srai><star/> east of <star index="2"/></srai></template>
+</category>
+<category><pattern>_ TO THE WEST OF *</pattern>
+<template><srai><star/> west of <star index="2"/></srai></template>
+</category>
+<category><pattern>_ TO THE NORTH OF *</pattern>
+<template><srai><star/> north of <star index="2"/></srai></template>
+</category>
+<category><pattern>_ TO THE SOUTH OF *</pattern>
+<template><srai><star/> south of <star index="2"/></srai></template>
+</category>
+<category><pattern><set>numbername</set> _</pattern>
+<template><srai><map><name>name2number</name><star/></map> <star index="2"/></srai></template>
+</category>
+<category><pattern>_ <set>numbername</set> *</pattern>
+<template><srai><star/> <map><name>name2number</name><star index="2"/></map> <star index="3"/></srai></template>
+</category>
+<category><pattern>_ <set>numbername</set></pattern>
+<template><srai><star/> <map><name>name2number</name><star index="2"/></map></srai></template>
+</category>
+<category><pattern>WHICH IS THE <set>estup</set></pattern>
+<template><srai>WHICH IS <star/></srai></template>
+</category>
+<category><pattern>WHICH IS THE <set>estdown</set></pattern>
+<template><srai>WHICH IS <star/></srai></template>
+</category>
+<category><pattern>WHICH OF THEM IS *</pattern>
+<template><srai>WHICH IS <star/></srai></template>
+</category>
+<category><pattern>PLAY ME A SONG BY *</pattern>
+<template><srai>PLAY <star/></srai></template>
+</category>
+<category><pattern><set>name</set> IS <set>erup</set> THAN <set>name</set> BUT <set>erdown</set> THAN <set>name</set></pattern>
+<template><srai><star/> IS <star index="2"/> THAN <star index="3"/></srai>
+<srai><star index="5"/> IS <star index="2"/> THAN <star/></srai></template>
+</category>
+<category><pattern>WHO IS <set>estup</set></pattern>
+<template><srai>WHO IS <map><name>est2er</name><star/></map></srai></template>
+</category>
+<category><pattern>WEN IZ *</pattern>
+<template><srai>WHEN IS <star/></srai></template>
+</category>
+<category><pattern>_ UR *</pattern>
+<template><srai><star/> YOUR <star index="2"/></srai></template>
+</category>
+<category><pattern>UR *</pattern>
+<template><srai>YOUR <star/></srai></template>
+</category>
+<category><pattern>_ BD</pattern>
+<template><srai><star/> BIRTHDAY</srai></template>
+</category>
+<category><pattern>WHICH DO YOU LIKE BETTER * OR *</pattern>
+<template><srai>DO YOU PREFER <star/> OR <star index="2"/></srai></template>
+</category>
+<category><pattern>ARE YOU NERVOUS ^</pattern>
+<template><srai>FEELINGS</srai></template>
+</category>
+<category><pattern>WHY SHOULD YOU WIN *</pattern>
+<template><srai>CAN YOU WIN <star/></srai></template>
+</category>
+<category><pattern>POEM</pattern>
+<template><srai>LIMERICK</srai></template>
+</category>
+<category><pattern>TELL ME # POEM</pattern>
+<template><srai>POEM</srai></template>
+</category>
+<category><pattern>TELL ME A POEM</pattern>
+<template><srai>POEM</srai></template>
+</category>
+<category><pattern>RECITE ^ POEM</pattern>
+<template><srai>POEM</srai></template>
+</category>
+<category><pattern>DO YOU KNOW ^ POEM</pattern>
+<template><srai>POEM</srai></template>
+</category>
+<category><pattern>DO YOU KNOW ^ POEMS</pattern>
+<template><srai>POEM</srai></template>
+</category>
+<category><pattern>CAN YOU ^ POETRY</pattern>
+<template><srai>POEM</srai></template>
+</category>
+<category><pattern>WHAT IS THE LAST LETTER <set>preposition</set> *</pattern>
+<template><srai>LASTLETTER <star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT IS THE _ <set>preposition</set> YOUR NAME</pattern>
+<template><srai>WHAT IS THE <star/> <star index="2"/> <bot name="name"/></srai></template>
+</category>
+<category><pattern>WHAT IS THE _ <set>preposition</set> MY NAME</pattern>
+<template><srai>WHAT IS THE <star/> <star index="2"/> <get name="name"/></srai></template>
+</category>
+<category><pattern>WHAT * COMES BETWEEN * AND *</pattern>
+<template><srai>WHAT <star/> COMES AFTER <star index="2"/></srai></template>
 </category>
 <category><pattern>DEFINE E MAIL</pattern>
 <template><srai>DEFINE ELECTRONIC MAIL</srai></template>
@@ -28,7 +213,6 @@
 <category><pattern>HAVE YOU READ # GOOD BOOKS #</pattern>
 <template><srai>FAVORITE BOOK</srai></template>
 </category>
-
 <category><pattern>WHAT # CAR DO YOU HAVE</pattern>
 <template><srai>CAR MODEL</srai></template>
 </category>
@@ -312,6 +496,9 @@
 <template><srai>FAVORITE OPERATING SYSTEM</srai></template>
 </category>
 <category><pattern>WHAT MUSIC ^ DO YOU LIKE ^</pattern>
+<template><srai>FAVORITE BAND</srai></template>
+</category>
+<category><pattern>WHAT MUSIC ^ ARE YOU INTO ^</pattern>
 <template><srai>FAVORITE BAND</srai></template>
 </category>
 <category><pattern>WHICH * DO YOU LIKE</pattern>
@@ -2542,5 +2729,44 @@ Is <star/> <star index="4"/>?
 </category>
 <category><pattern>IM SO *</pattern>
 <template><srai>I AM SO <star/></srai></template>
+</category>
+<category><pattern>WHAT IS <set>estdown</set></pattern>
+<template><think><set var="whowhat">what</set></think>
+<srai>WHICH IS <map><name>est2er</name><star/></map></srai></template>
+</category>
+<category><pattern>WHAT IS <set>estup</set></pattern>
+<template><think><set var="whowhat">who</set></think>
+<srai>WHICH IS <map><name>est2er</name><star/></map></srai></template>
+</category>
+<category><pattern>WHO IS <set>estdown</set></pattern>
+<template><think><set var="whowhat">who</set></think>
+<srai>WHICH IS <map><name>est2er</name><star/></map></srai></template>
+</category>
+<category><pattern>SPELL MY NAME</pattern>
+<template><srai>SPELL <get name="name"/></srai></template>
+</category>
+<category><pattern>SPELL MY MIDDLE NAME</pattern>
+<template><srai>SPELL <get name="middlename"/></srai></template>
+</category>
+<category><pattern>SPELL MY LAST NAME</pattern>
+<template><srai>SPELL <get name="lastname"/></srai></template>
+</category>
+<category><pattern>SPELL MY FIRST NAME</pattern>
+<template><srai>SPELL <get name="firstname"/></srai></template>
+</category>
+<category><pattern>WHAT DOES * SPELL BACKWARDS</pattern>
+<template><srai>SPELL <star/> BACKWARDS</srai></template>
+</category>
+<category><pattern>SPELL MY NAME *</pattern>
+<template><srai>SPELL <get name="name"/> <star/></srai></template>
+</category>
+<category><pattern>SPELL MY MIDDLE NAME *</pattern>
+<template><srai>SPELL <get name="middlename"/> <star/></srai></template>
+</category>
+<category><pattern>SPELL MY LAST NAME *</pattern>
+<template><srai>SPELL <get name="lastname"/> <star/></srai></template>
+</category>
+<category><pattern>SPELL MY FIRST NAME *</pattern>
+<template><srai>SPELL <get name="firstname"/> <star/></srai></template>
 </category>
 </aiml>

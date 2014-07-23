@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: familiar.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -141,15 +141,25 @@ What is your <lowercase><get name="familiarpredicate"/></lowercase>'s name?</tem
 <li value="cat">Do you have any other pets?</li>
 <li>I will remember your <get name="familiarpredicate"/>'s name is <get name="contactname"/>.</li>
 </condition>
+<srai>GENDERCOMMENT</srai>
 <think><set><name><get name="familiarpredicate"/></name><get name="contactname"/></set></think>
-<learnf>
+<learn>
 <category><pattern>WHO IS <eval><get name="contactname"/></eval></pattern>
-<template><eval><get name="contactname"/></eval> is your <eval><get name="familiarpredicate"/></eval>.</template>
+<template><eval><get name="contactname"/></eval> is your <eval><get name="familiarpredicate"/></eval>. </template>
 </category>
 <category><pattern><eval><get name="contactname"/></eval></pattern>
 <template>Your <eval><get name="familiarpredicate"/></eval>.</template>
 </category>
-</learnf></li>
+</learn></li>
+</condition></template>
+</category>
+<category><pattern>GENDERCOMMENT</pattern>
+<template><think><set var="gendername"><srai>GENDERNAME <get name="contactname"/></srai></set>
+<set var="genderpred"><map name="familiargender"><get name="familiarpredicate"/></map></set>
+</think>
+<condition var="gendername">
+<li value="F"><condition value="M" var="genderpred">Isn't <get name="contactname"/> usually a female name?</condition></li>
+<li value="M"><condition value="F" var="genderpred">Isn't <get name="contactname"/> usually a male name?</condition></li>
 </condition></template>
 </category>
 </aiml>

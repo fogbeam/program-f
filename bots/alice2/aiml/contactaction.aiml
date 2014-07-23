@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: contactaction.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -737,7 +737,7 @@ birthday: <srai>CONTACTBIRTHDAY <get name="contactid"/></srai>
              <li><condition name="messagebody">
                  <li value="unknown"><srai>ASK MESSAGEBODY</srai></li>
                  <li><oob><sms><recipient><get name="contacturi"/></recipient><message><get name="messagebody"/></message></sms></oob> Now sending "<get name="messagebody"/>" to <get name="displayname"/>. <srai>CONTACTFINALIZE</srai></li>
-  	         </condition>
+  		          </condition>
              </li>
              </condition>
           </li>
@@ -892,7 +892,7 @@ topic: <get name="topic"/>.
               <srai>QUERYINFO CONTACTID</srai>
             </li>
             <li><srai>QUERYINFO EXTERNAL</srai></li>
-      	    </condition>
+      	        </condition>
         </li>
         </condition>
     </li>

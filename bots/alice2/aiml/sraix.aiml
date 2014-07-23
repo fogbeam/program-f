@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: sraix.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -207,23 +207,6 @@
 </category>
 <category><pattern>SHOULD I BUY *</pattern>
 <template><sraix service="pannous">SHOULD I BUY <star/></sraix></template>
-</category>
-<category><pattern>SRAIXFAILED</pattern>
-<template><random>
-<li>I don't know the answer.</li>
-<li>I used my lifeline to ask another robot, but he didn't know.</li>
-<li>I asked another robot, but he didn't know.</li>
-<li>Sorry, nothing found in web services.</li>
-<li>I'm unable to find the answer from web services.</li>
-<li>None of the other robots can tell me the answer.</li>
-</random>
-<random>
-<li>Let's try Google.</li>
-<li>I'm going to try a search.</li>
-<li>Perhaps we should try a web search.</li>
-<li>I'll try asking Google.</li>
-</random>
-<oob><search><input/></search></oob></template>
 </category>
 <category><pattern>APPOINTMENT *</pattern>
 <template><srai>SCHEDULEDESCRIPTION <star/> SCHEDULEREQUEST APPOINTMENT <star/></srai></template>
@@ -1309,9 +1292,6 @@
 </category>
 <category><pattern>WHAT SHOULD I DO *</pattern>
 <template><sraix service="pannous">WHAT SHOULD I DO <star/></sraix></template>
-</category>
-<category><pattern>WHAT RHYMES WITH *</pattern>
-<template><sraix service="pannous">WHAT RHYMES WITH <star/></sraix></template>
 </category>
 <category><pattern>WHAT DOES <set>article</set> *</pattern>
 <template><sraix service="pannous">WHAT DOES <star/> <star index="2"/></sraix></template>

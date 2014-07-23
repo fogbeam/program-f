@@ -62,7 +62,7 @@ public class AIMLProcessor {
             else if (mName.equals("that")) that = DomUtils.nodeToString(m);
             else if (mName.equals("topic")) topic = DomUtils.nodeToString(m);
             else if (mName.equals("template")) template = DomUtils.nodeToString(m);
-            else System.out.println("categoryProcessor: unexpected "+mName);
+            else System.out.println("categoryProcessor: unexpected "+mName+" in "+DomUtils.nodeToString(m));
         }
         //System.out.println("categoryProcessor: pattern="+pattern);
         pattern = trimTag(pattern, "pattern");
@@ -925,8 +925,10 @@ public class AIMLProcessor {
     private static String random(Node node, ParseState ps) {
         NodeList childList = node.getChildNodes();
         ArrayList<Node> liList = new ArrayList<Node>();
-        for (int i = 0; i < childList.getLength(); i++)
+        String setName = getAttributeOrTagValue(node, ps, "set");
+        for (int i = 0; i < childList.getLength(); i++) {
             if (childList.item(i).getNodeName().equals("li")) liList.add(childList.item(i));
+        }
         int index = (int) (Math.random() * liList.size());
         if (MagicBooleans.qa_test_mode) index = 0;
         return evalTagContent(liList.get(index), ps, null);
@@ -1249,7 +1251,7 @@ public class AIMLProcessor {
         try {
 			result = IOUtils.evalScript("JavaScript", script);
         } catch (Exception ex) {
-           // ex.printStackTrace();
+           ex.printStackTrace();
         }
 		MagicBooleans.trace("in AIMLProcessor.javascript, returning result: " + result);
         return result;

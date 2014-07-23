@@ -138,3 +138,42 @@ shorter:taller
 narrower:wider
 shallower:deeper
 darker:lighter
+above:below
+above:beneath
+above:underneath
+across from:across from
+against:against
+ahead of:trailing
+along:along
+alongside:alongside
+around:inside
+around:inside of
+atop:below
+behind:in front of
+below:above
+below:atop
+below:on top of
+beneath:above
+beside:beside
+close to:close to
+east of:west of
+far from:far from
+in front of:behind
+inside of:around
+inside:around
+left of:right of
+near to:near to
+near:near
+next to:next to
+north of:south of
+on top of:below
+opposite:opposite
+right of:left of
+south of:north of
+trailing:ahead of
+underneath:above
+west of:east of
+on:under
+under:on
+in:around
+around:in

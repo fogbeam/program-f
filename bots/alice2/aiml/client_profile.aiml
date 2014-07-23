@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: client_profile.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -241,7 +241,7 @@ I call you <get name="name"/>.</template>
 <set><name><get var="animal"/></name><get var="name"/></set>
 </think>
 What is it like having a pet <get var="animal"/>?
-<learnf>
+<learn>
 <category>
 <pattern>MY <eval><get var="animal"/></eval></pattern>
 <template><eval><get var="name"/></eval></template>
@@ -254,7 +254,7 @@ What is it like having a pet <get var="animal"/>?
 <pattern><eval><get var="name"/></eval></pattern>
 <template>Your <eval><get var="animal"/></eval>.</template>
 </category>
-</learnf></template>
+</learn></template>
 </category>
 <category><pattern>MY DOG</pattern>
 <template><get name="dog"/></template>
@@ -360,7 +360,7 @@ What is it like having a pet <get var="animal"/>?
 <template><think><set var="gender"><get name="gender"/></set></think>
 <condition var="gender">
 <li value="unknown">I don't know your gender.  Are you a man or a woman?</li>
-<li><get var="gender"/>.</li>
+<li>You are <get var="gender"/>.</li>
 </condition></template>
 </category>
 <category><pattern>MY GENDER IS *</pattern>

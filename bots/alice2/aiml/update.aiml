@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: update.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -42,9 +42,9 @@ Denormalize <get var="x3"/> = <denormalize><get var="x3"/></denormalize><br/></t
 <template><srai>TEST CRASH</srai></template>
 </category>
 <category><pattern>PROGRAM VERSION</pattern>
-<template>Program AB 0.0.6.22 beta -- AI Foundation Reference AIML 2.1 implementation</template>
+<template>Program AB 0.0.6.24 beta -- AI Foundation Reference AIML 2.1 implementation</template>
 </category>
 <category><pattern>BRAIN BUILD</pattern>
-<template>Sun Jun 22 20:50:54 EDT 2014</template>
+<template>Sat Jul 19 16:21:53 EDT 2014</template>
 </category>
 </aiml>

@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: that.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -20,12 +20,12 @@
 <template><condition name="ustatement">
 <li value="unknown">Interesting explanation.</li>
 <li><set var="explanation"><get name="ustatement"/> because <person/></set>. 
-<learnf>
+<learn>
 <category>
 <pattern>WHY DID <eval><srai>FIRSTTWOWORDS <get name="istatement"/></srai></eval> ^</pattern>
 <template><eval><get var="explanation"/></eval>.</template>
 </category>
-</learnf>
+</learn>
 <think>
 <set name="ustatement">unknown</set>
 <set name="istatement">unknown</set>

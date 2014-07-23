@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: knowledge.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -16,8 +16,38 @@
 <!--  -->
 <!-- For more information see http://www.alicebot.org -->
 <!--  -->
+<category><pattern>RHYME *</pattern>
+<template><think>
+<set var="rhyme"><map name="rhyme"><star/></map></set>
+</think>
+<condition var="rhyme">
+<li value="unknown">anti-<star/></li>
+<li><get var="rhyme"/></li>
+</condition></template>
+</category>
+<category><pattern>IS # <set>wet</set> ^ WET ^</pattern>
+<template><star index="2"/> is wet.</template>
+</category>
+<category><pattern>WHAT SHAPE IS # <set>sphere</set></pattern>
+<template>Spherical</template>
+</category>
+<category><pattern>WHAT # NEXT # 2 4 6 8</pattern>
+<template>10</template>
+</category>
+<category><pattern>WHAT # NEXT # 2 4 6</pattern>
+<template>8</template>
+</category>
+<category><pattern>WHAT # NEXT # 1 3 5 7</pattern>
+<template>9</template>
+</category>
+<category><pattern>WHAT # NEXT # 1 3 5</pattern>
+<template>7</template>
+</category>
 <category><pattern>WHAT IS THE CAPITAL OF <set>state</set></pattern>
 <template><map><name>state2capital</name><star/></map>.</template>
+</category>
+<category><pattern>WHAT IS THE CAPITAL OF <set>nation</set></pattern>
+<template><map><name>nation2capital</name><star/></map>.</template>
 </category>
 <category><pattern>WHAT IS THE LARGEST CITY ^ <set>state</set> ^</pattern>
 <template><map><name>state2largestcity</name><star/></map>.</template>
@@ -100,6 +130,9 @@
 <category><pattern>IS <set>letter</set> A # LETTER</pattern>
 <template>Yes</template>
 </category>
+<category><pattern>NAME <set>quantifier</set> # COUNTRY #</pattern>
+<template>One country is <random><li>The United States</li><li>Russia</li><li>China</li><li>Japan</li><li>France</li><li>South Africa</li></random>.</template>
+</category>
 <category><pattern>NAME <set>quantifier</set> # NORTH POLE</pattern>
 <template>Ice, Seals, Penguins, Elves, Santa Claus.</template>
 </category>
@@ -144,6 +177,9 @@
 </category>
 <category><pattern>NAME <set>quantifier</set> # ASIA</pattern>
 <template>Russia, China, India, Pakistan.</template>
+</category>
+<category><pattern>NAME <set>quantifier</set> # ORANGE</pattern>
+<template>Carrots</template>
 </category>
 <category><pattern>NAME <set>quantifier</set> *</pattern>
 <template><random><li>A good name would be</li>

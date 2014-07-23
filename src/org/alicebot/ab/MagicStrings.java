@@ -24,8 +24,8 @@ package org.alicebot.ab;
  */
 public class MagicStrings {
     // General global strings
-    public static String program_name_version = "Program AB 0.0.6.23 beta -- AI Foundation Reference AIML 2.1 implementation";
-    public static String comment = "Added ChatTest JUnit testing.";
+    public static String program_name_version = "Program AB 0.0.6.24 beta -- AI Foundation Reference AIML 2.1 implementation";
+    public static String comment = "Added repetition detection.";
     public static String aimlif_split_char = ",";
     public static String default_bot = "alice2";
     public static String default_language = "EN";
@@ -37,6 +37,7 @@ public class MagicStrings {
     public static String pannous_api_key = "guest";
     public static String pannous_login = "test-user";
     public static String sraix_failed = "SRAIXFAILED";
+    public static String repetition_detected = "REPETITIONDETECTED";
     public static String sraix_no_hint = "nohint";
     public static String sraix_event_hint = "event";
     public static String sraix_pic_hint = "pic";

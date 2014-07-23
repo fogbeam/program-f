@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: sraix_combine.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -34,9 +34,6 @@
 <set var="response">
 <sraix bot="drwallace/wndef" botid="f038d2f99e345a95" host="callmom.pandorabots.com">WNDEF <star/></sraix></set>
 </think>
-<condition var="response">
-<li value="unknown"><sraix service="pannous">DEFINE <star/></sraix></li>
-<li><get var="response"/></li>
-</condition></template>
+<get var="response"/></template>
 </category>
 </aiml>

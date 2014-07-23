@@ -2,7 +2,7 @@
 <aiml>
 <!-- File: reductions2.aiml -->
 <!-- Author: Dr. Richard S. Wallace -->
-<!-- Last modified: June 22, 2014 -->
+<!-- Last modified: July 19, 2014 -->
 <!--  -->
 <!-- This AIML file is part of the ALICE2 0.0.5 chat bot knowledge base. -->
 <!--  -->
@@ -156,7 +156,13 @@
 <template><srai>HOW IS <star/> LIKE <star index="2"/></srai></template>
 </category>
 <category><pattern>WHAT DO <set>article</set> * AND <set>article</set> * HAVE IN COMMON</pattern>
+<template><srai>HOW IS <star index="2"/> LIKE <star index="4"/></srai></template>
+</category>
+<category><pattern>WHAT DOES * AND * HAVE IN COMMON</pattern>
 <template><srai>HOW IS <star/> LIKE <star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT DOES <set>article</set> * AND <set>article</set> * HAVE IN COMMON</pattern>
+<template><srai>HOW IS <star index="2"/> LIKE <star index="4"/></srai></template>
 </category>
 <category><pattern>WHAT <set>modal</set> <set>pronoun</set> USE * FOR</pattern>
 <template><srai>WHAT IS THE PURPOSE OF <star index="3"/></srai></template>
@@ -2339,8 +2345,6 @@
 <category><pattern>HOW MANY LETTERS IN MY NAME</pattern>
 <template>The word "<get name="name"/>" has <srai>SENTENCELENGTH <explode><get name="name"/></explode></srai> letters.</template>
 </category>
-
-
 <category><pattern>I AM ABOUT TO *</pattern>
 <template><srai>I WILL <star/></srai></template>
 </category>
@@ -3284,7 +3288,10 @@
 <template><srai>PLEASE <star/></srai></template>
 </category>
 <category><pattern>LOCATE *</pattern>
-<template><srai>MAP <star/></srai></template>
+<template><srai>WHERE IS <star/></srai></template>
+</category>
+<category><pattern>WHAT IS THE LOCATION OF *</pattern>
+<template><srai>WHERE IS <star/></srai></template>
 </category>
 <category><pattern>YOU ARE GAY</pattern>
 <template><srai>ORIENTATION</srai></template>
@@ -4203,9 +4210,6 @@
 </category>
 <category><pattern>CALL THIS NUMBER *</pattern>
 <template><srai>CALL <star/></srai></template>
-</category>
-<category><pattern>WHAT THE HELL IS *</pattern>
-<template><srai>WHAT IS <star/></srai></template>
 </category>
 <category><pattern>DO YOU LIKE ANYONE</pattern>
 <template><srai>do you have a boyfriend</srai></template>
