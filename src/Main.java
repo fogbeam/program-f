@@ -37,7 +37,7 @@ public class Main {
         mainFunction(args);
     }
     public static void mainFunction (String[] args) {
-        String botName = "loebner";
+        String botName = "alice2";
         MagicBooleans.jp_tokenize = false;
         MagicBooleans.trace_mode = true;
         String action="chat";
